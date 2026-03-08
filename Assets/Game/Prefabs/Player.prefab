@@ -123,7 +123,7 @@ Transform:
   m_GameObject: {fileID: 8988164318199248913}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: -72, z: 0}
+  m_LocalPosition: {x: -40, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7456334905099763947, guid: 23e7370f7202edc4c812bfd568f92b89, type: 3}
+  m_Sprite: {fileID: 7979134422924196974, guid: 7096973a8ff67b24399187e81013f0c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -291,7 +291,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 16, y: 16}
+    oldSize: {x: 32, y: 32}
     newSize: {x: 16, y: 15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -441,7 +441,7 @@ MonoBehaviour:
   groundCheckCollider: {fileID: 3537699334316088369}
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 2112
   flipBehaviour: 4
   useAnimator: 1
   animator: {fileID: 1310052296925175220}
@@ -465,8 +465,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
   _showInfo: 1
   _explanation: "If (IsGrounded(Player)) and when axis horizontal is held (this can
-    only happen every 0.2 seconds):\n          plays sound step at volume 1 and a
-    pitch in the range [0.4,0.7]\n"
+    only happen every 0.2 seconds):\n          plays sound step at volume 0.6 and
+    a pitch in the range [0.4,0.7]\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
