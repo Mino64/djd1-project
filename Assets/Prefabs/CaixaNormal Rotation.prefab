@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 325039317996354665}
   - component: {fileID: 5495481169879919547}
   m_Layer: 11
-  m_Name: CaixaNormal
+  m_Name: CaixaNormal Rotation
   m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,4 +165,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 0
