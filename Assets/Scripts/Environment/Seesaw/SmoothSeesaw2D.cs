@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class SmoothSeesaw2D : MonoBehaviour
 {
-    public float maxAngle = 25f;
-    public float speed = 5f;
-    public float maxDistance = 3f;
-    public float deadZone = 0.2f;
+    [SerializeField] private float maxAngle = 25f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float maxDistance = 3f;
+    [SerializeField] private float deadZone = 0.2f;
 
     private List<GameObject> allObjects = new List<GameObject>();
 
-    void Update()
+    private void Update()
     {
         float torque = 0f;
         float centerX = transform.position.x;

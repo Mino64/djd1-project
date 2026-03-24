@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SeesawDetector2D : MonoBehaviour
 {
-    public SmoothSeesaw2D seesaw;
+    [SerializeField] private SmoothSeesaw2D seesaw;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
