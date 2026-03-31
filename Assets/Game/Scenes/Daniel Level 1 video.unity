@@ -1952,7 +1952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &784092446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,14 +1966,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: Switches to scene Level 1
+  _explanation: Switches to scene Daniel Level 1 video
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: Level 1
+  sceneName: Daniel Level 1 video
 --- !u!114 &784092447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1987,7 +1987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When key Escape is pressed:\n          switches to scene Level 1\n"
+  _explanation: "When key R is pressed:\n          switches to scene Daniel Level
+    1 video\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -1998,7 +1999,7 @@ MonoBehaviour:
     action: {fileID: 784092446}
   inputType: 1
   buttonName: 
-  key: 27
+  key: 114
   axis: 
   deadArea: {x: -0.2, y: 0.2}
   continuous: 0
@@ -144614,6 +144615,14 @@ PrefabInstance:
     - target: {fileID: 2384533752380347835, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
       propertyPath: m_Name
       value: Seesaw test(puzzle 2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605048749389879429, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089097895870016796, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7621037965003219889, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
       propertyPath: m_LocalPosition.x
