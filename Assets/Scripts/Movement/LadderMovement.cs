@@ -7,6 +7,7 @@ public class LadderMovement : MonoBehaviour
     private bool isLadder;
     private bool isClimbing;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator catAnimator;
     private void Update()
     {
         vertical = Input.GetAxis("Vertical");
@@ -16,6 +17,14 @@ public class LadderMovement : MonoBehaviour
             isClimbing = true;
         }
         
+        if (isClimbing == true)
+        {
+            catAnimator.SetBool("IsClimbing", true);
+        }
+        else
+        {
+            catAnimator.SetBool("IsClimbing", false);
+        }
     }
     private void FixedUpdate()
     {
