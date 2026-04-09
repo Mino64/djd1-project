@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 3312479161
     locked: 0
+  - name: Clouds
+    uniqueID: 3588784497
+    locked: 0
   - name: Ground
     uniqueID: 2627027289
     locked: 0
