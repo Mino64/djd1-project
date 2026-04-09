@@ -185,7 +185,8 @@ MonoBehaviour:
   _showInfo: 1
   _explanation: "When a collision with a trigger with tags [Player] starts:\n         
     plays sound exit at volume 1 and at pitch 1\n          destroys objects with
-    tags [Player] \n then, at 1 seconds, \n          switches to scene Level 1\n"
+    tags [Player] \n then, at 1 seconds, \n          switches to scene Daniel Level
+    1 video\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -262,11 +263,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
   _showInfo: 1
-  _explanation: Switches to scene Level 1
+  _explanation: Switches to scene Daniel Level 1 video
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: Level 1
+  sceneName: Daniel Level 1 video

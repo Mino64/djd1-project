@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 865450591072483588}
   - component: {fileID: 5905469395458385635}
   - component: {fileID: 8480874842871072727}
+  - component: {fileID: 329279275636520943}
   m_Layer: 11
   m_Name: caixagrande
-  m_TagString: Untagged
+  m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +110,7 @@ Rigidbody2D:
   m_LinearDamping: 4
   m_AngularDamping: 0.05
   m_GravityScale: 2.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 88f4279db62935a45b5fd3d0b7dd148e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 88f4279db62935a45b5fd3d0b7dd148e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -166,3 +167,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 32, y: 32}
   m_EdgeRadius: 0
+--- !u!114 &329279275636520943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5326280930378994135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5083a39cbcbf104ebf50d4189b4b737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weights
+  weight: 3

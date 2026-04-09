@@ -3,12 +3,12 @@ using UnityEngine;
 public class LadderMovement : MonoBehaviour
 {
     private float vertical;
-    private float speed = 8f;
+    [SerializeField] private float speed = 8f;
     private bool isLadder;
     private bool isClimbing;
     [SerializeField] private Rigidbody2D rb;
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private Animator catAnimator;
+    private void Update()
     {
         vertical = Input.GetAxis("Vertical");
 
@@ -17,6 +17,14 @@ public class LadderMovement : MonoBehaviour
             isClimbing = true;
         }
         
+        if (isClimbing == true)
+        {
+            catAnimator.SetBool("IsClimbing", true);
+        }
+        else
+        {
+            catAnimator.SetBool("IsClimbing", false);
+        }
     }
     private void FixedUpdate()
     {

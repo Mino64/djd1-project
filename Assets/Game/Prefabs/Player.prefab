@@ -107,9 +107,11 @@ GameObject:
   - component: {fileID: 6986011483222948518}
   - component: {fileID: 201971875372721956}
   - component: {fileID: 8419627893303983318}
+  - component: {fileID: 8141059765481669652}
+  - component: {fileID: 5197272100658636680}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Cat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -974,11 +976,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
   _showInfo: 1
-  _explanation: Switches to scene Level 1
+  _explanation: Switches to scene splash_screen_gameLogo
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: Level 1
+  sceneName: splash_screen_gameLogo
+--- !u!114 &8141059765481669652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164318199248913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63888952b553b2e448ad661a49b8505d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  speed: 64
+  rb: {fileID: 422128524584384484}
+--- !u!114 &5197272100658636680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164318199248913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5083a39cbcbf104ebf50d4189b4b737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weights
+  weight: 0.1
