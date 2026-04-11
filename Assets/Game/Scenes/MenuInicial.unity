@@ -1399,7 +1399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34fc0b9f6950a9459a67ed9ca86e531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  _sceneName: Daniel Level 1 video
+  _sceneName: Level2Entrega2
 --- !u!1 &1799688126
 GameObject:
   m_ObjectHideFlags: 0
