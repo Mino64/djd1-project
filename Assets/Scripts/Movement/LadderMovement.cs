@@ -17,7 +17,7 @@ public class LadderMovement : MonoBehaviour
             isClimbing = true;
         }
         
-        if (isClimbing == true)
+       if (isClimbing == true)
         {
             catAnimator.SetBool("IsClimbing", true);
         }

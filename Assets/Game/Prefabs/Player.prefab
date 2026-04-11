@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
   _showInfo: 1
-  _explanation: 'Plays sound step at volume 0.6 and a pitch in the range [0.4,0.7]'
+  _explanation: 'Plays sound step at volume 0.15 and a pitch in the range [0.4,0.7]'
   description: 
   enableAction: 1
   hasTags: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   hasConditions: 0
   actionConditions: []
   clip: {fileID: 8300000, guid: a113ad790de1f6d4d9742a0fc9cce8a1, type: 3}
-  volume: {x: 0.6, y: 0.6}
+  volume: {x: 0.15, y: 0.15}
   pitch: {x: 0.4, y: 0.7}
 --- !u!114 &716868327495819274
 MonoBehaviour:
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
   _showInfo: 1
-  _explanation: Plays sound jump at volume 1 and at pitch 1
+  _explanation: Plays sound jump at volume 0.15 and at pitch 1
   description: 
   enableAction: 1
   hasTags: 0
@@ -650,7 +650,7 @@ MonoBehaviour:
   hasConditions: 0
   actionConditions: []
   clip: {fileID: 8300000, guid: df0228d7056d98343b7cf8110fb10b5b, type: 3}
-  volume: {x: 1, y: 1}
+  volume: {x: 0.15, y: 0.15}
   pitch: {x: 1, y: 1}
 --- !u!96 &8021920425597388584
 TrailRenderer:
@@ -836,7 +836,7 @@ MonoBehaviour:
     of 0 units/sec, in the current direction.\n          disables component Player
     (OkapiKit.MovementPlatformer)\n          sets animation parameter IsDead of object
     Player to True\n          plays sound dead at volume 1 and at pitch 1\n then,
-    at 1.5 seconds, \n          switches to scene Level 1\n"
+    at 1.5 seconds, \n          switches to scene splash_screen_gameLogo\n"
   description: Reset Level
   enableTrigger: 1
   allowRetrigger: 0
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
   _showInfo: 1
-  _explanation: Plays sound dead at volume 1 and at pitch 1
+  _explanation: Plays sound dead at volume 0.15 and at pitch 1
   description: 
   enableAction: 1
   hasTags: 0
@@ -961,7 +961,7 @@ MonoBehaviour:
   hasConditions: 0
   actionConditions: []
   clip: {fileID: 8300000, guid: 969be01b071541140868cf17ebab6431, type: 3}
-  volume: {x: 1, y: 1}
+  volume: {x: 0.15, y: 0.15}
   pitch: {x: 1, y: 1}
 --- !u!114 &8419627893303983318
 MonoBehaviour:
@@ -998,6 +998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 64
   rb: {fileID: 422128524584384484}
+  catAnimator: {fileID: 1310052296925175220}
 --- !u!114 &5197272100658636680
 MonoBehaviour:
   m_ObjectHideFlags: 0
