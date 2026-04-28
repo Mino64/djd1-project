@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
-  _explanation: "Every 4 seconds, trigger the actions::\n At 6 seconds, \n         
+  _explanation: "Every 2 seconds, trigger the actions::\n At 6 seconds, \n         
     switches to scene MenuInicial\n"
   description: 
   enableTrigger: 1
@@ -448,7 +448,7 @@ MonoBehaviour:
   startTriggered: 0
   initialDelayEnable: 0
   initialDelay: {x: 5, y: 5}
-  timeInterval: {x: 4, y: 4}
+  timeInterval: {x: 2, y: 2}
 --- !u!1 &2095409744
 GameObject:
   m_ObjectHideFlags: 0

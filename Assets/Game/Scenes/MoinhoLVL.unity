@@ -9717,6 +9717,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 7043272412361900574, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
+      propertyPath: sceneName
+      value: Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043272412361900574, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
+      propertyPath: _explanation
+      value: Switches to scene Final
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
