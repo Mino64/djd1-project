@@ -122705,7 +122705,7 @@ GameObject:
   - component: {fileID: 2010024739}
   - component: {fileID: 2010024740}
   - component: {fileID: 2010024741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: barco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
