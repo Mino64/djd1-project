@@ -1043,7 +1043,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -982488135
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -139741,7 +139741,6 @@ GameObject:
   - component: {fileID: 9082707171143533801}
   - component: {fileID: 2031829573131245931}
   - component: {fileID: 7649232675473998489}
-  - component: {fileID: 7927976759480842843}
   - component: {fileID: 6259833137206172103}
   m_Layer: 0
   m_Name: 'Player isis '
@@ -139886,20 +139885,6 @@ MonoBehaviour:
   hasConditions: 0
   actionConditions: []
   sceneName: splash_screen_gameLogo
---- !u!114 &7927976759480842843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7080592862117725790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63888952b553b2e448ad661a49b8505d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  speed: 64
-  rb: {fileID: 1955896817321478571}
 --- !u!96 &8191089235684768103
 TrailRenderer:
   serializedVersion: 4
@@ -140019,7 +140004,7 @@ Transform:
   m_GameObject: {fileID: 7080592862117725790}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.93294, y: -69.4, z: 0}
+  m_LocalPosition: {x: 162.6, y: 124.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
