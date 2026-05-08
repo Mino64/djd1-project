@@ -12,4 +12,12 @@ public class FirstButtonSelected : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(firstSelected.gameObject);
     }
+
+        void Update()
+    {
+        if (EventSystem.current.currentSelectedGameObject == null)
+        {
+            EventSystem.current.SetSelectedGameObject(firstSelected.gameObject);
+        }
+    }
 }
