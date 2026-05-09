@@ -60,6 +60,7 @@ Assets/Scripts/Environment/Wet/
  RisingWater.cs
  WaterTrigger.cs
 Assets/Scripts/KenScripts/
+ AbrirEFecharPortaFinal.cs
  PushLeft.cs
  Rope.cs
  TriggerLigarEDesligar.cs
