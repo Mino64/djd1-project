@@ -470,7 +470,7 @@ MonoBehaviour:
   _showInfo: 1
   _explanation: "If (IsGrounded(Player)) and when axis horizontal is held (this can
     only happen every 0.2 seconds):\n          plays sound catWalkingOnWood_Small
-    with a volume in the range [0.4,0.6] and a pitch in the range [0.4,0.7]\n"
+    with a volume in the range [0.8,1] and a pitch in the range [0.4,0.7]\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -570,8 +570,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
   _showInfo: 1
   _explanation: "If (IsGrounded(Player)) and when button jump is pressed:\n At 0.4
-    seconds, \n          enables component Player (OkapiKit.ActionPlaySound)\nelse\n         
-    disables component Player (OkapiKit.ActionPlaySound)\n"
+    seconds, \n          enables component Player (OkapiKit.ActionPlaySound)\n         
+    plays sound catLanding at volume 1 and at pitch 1\nelse\n          disables component
+    Player (OkapiKit.ActionPlaySound)\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -623,6 +624,8 @@ MonoBehaviour:
   actions:
   - delay: 0.4
     action: {fileID: 8281659739507752528}
+  - delay: 0.4
+    action: {fileID: 5018350370408917105}
   inputType: 0
   buttonName: Jump
   key: 0
