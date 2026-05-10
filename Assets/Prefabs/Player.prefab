@@ -98,6 +98,8 @@ GameObject:
   - component: {fileID: 5579418092482842763}
   - component: {fileID: 716868327495819274}
   - component: {fileID: 5018350370408917105}
+  - component: {fileID: 8281659739507752528}
+  - component: {fileID: 198954745001828913}
   - component: {fileID: 8021920425597388584}
   - component: {fileID: 1015732714913503672}
   - component: {fileID: 4051256606398178243}
@@ -109,7 +111,6 @@ GameObject:
   - component: {fileID: 8419627893303983318}
   - component: {fileID: 8141059765481669652}
   - component: {fileID: 5197272100658636680}
-  - component: {fileID: 7826669953754006755}
   m_Layer: 0
   m_Name: Player
   m_TagString: Cat
@@ -468,8 +469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
   _showInfo: 1
   _explanation: "If (IsGrounded(Player)) and when axis horizontal is held (this can
-    only happen every 0.2 seconds):\n          plays sound catWalkingSmall at volume
-    0.15 and a pitch in the range [0.4,0.7]\n"
+    only happen every 0.2 seconds):\n          plays sound catWalkingOnWood_Small
+    with a volume in the range [0.4,0.6] and a pitch in the range [0.4,0.7]\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -544,16 +545,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
   _showInfo: 1
-  _explanation: 'Plays sound catWalkingSmall at volume 0.15 and a pitch in the range
-    [0.4,0.7]'
+  _explanation: 'Plays sound catWalkingOnWood_Small with a volume in the range [0.8,1]
+    and a pitch in the range [0.4,0.7]'
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  clip: {fileID: 8300000, guid: 514e468ed10775349b9ec2d588613c1c, type: 3}
-  volume: {x: 0.15, y: 0.15}
+  clip: {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
+  volume: {x: 0.8, y: 1}
   pitch: {x: 0.4, y: 0.7}
 --- !u!114 &716868327495819274
 MonoBehaviour:
@@ -568,8 +569,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
   _showInfo: 1
-  _explanation: "If (IsGrounded(Player)) and when button jump is pressed:\n         
-    plays sound catLanding at volume 0.15 and at pitch 1\n"
+  _explanation: "If (IsGrounded(Player)) and when button jump is pressed:\n At 0.4
+    seconds, \n          enables component Player (OkapiKit.ActionPlaySound)\nelse\n         
+    disables component Player (OkapiKit.ActionPlaySound)\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -619,8 +621,8 @@ MonoBehaviour:
     quest: {fileID: 0}
     dialogueKey: 
   actions:
-  - delay: 0
-    action: {fileID: 5018350370408917105}
+  - delay: 0.4
+    action: {fileID: 8281659739507752528}
   inputType: 0
   buttonName: Jump
   key: 0
@@ -630,7 +632,9 @@ MonoBehaviour:
   negate: 0
   useCooldown: 0
   cooldown: 0.1
-  elseActions: []
+  elseActions:
+  - delay: 0
+    action: {fileID: 198954745001828913}
 --- !u!114 &5018350370408917105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,7 +648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
   _showInfo: 1
-  _explanation: Plays sound catLanding at volume 0.15 and at pitch 1
+  _explanation: Plays sound catLanding at volume 1 and at pitch 1
   description: 
   enableAction: 1
   hasTags: 0
@@ -652,8 +656,52 @@ MonoBehaviour:
   hasConditions: 0
   actionConditions: []
   clip: {fileID: 8300000, guid: ec83aa2d7ea81194080985854989a52d, type: 3}
-  volume: {x: 0.15, y: 0.15}
+  volume: {x: 1, y: 1}
   pitch: {x: 1, y: 1}
+--- !u!114 &8281659739507752528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164318199248913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
+  _showInfo: 1
+  _explanation: Enables component Player (OkapiKit.ActionPlaySound)
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 5018350370408917105}
+  state: 0
+--- !u!114 &198954745001828913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164318199248913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
+  _showInfo: 1
+  _explanation: Disables component Player (OkapiKit.ActionPlaySound)
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 5018350370408917105}
+  state: 1
 --- !u!96 &8021920425597388584
 TrailRenderer:
   serializedVersion: 4
@@ -1014,29 +1062,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weights
   weight: 0.1
---- !u!114 &7826669953754006755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8988164318199248913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46216fa097ecb754babda0f26d640422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
-  _showInfo: 1
-  _explanation: 'Every 5 seconds, trigger the actions::
-
-'
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions: []
-  startTriggered: 0
-  initialDelayEnable: 0
-  initialDelay: {x: 5, y: 5}
-  timeInterval: {x: 5, y: 5}
