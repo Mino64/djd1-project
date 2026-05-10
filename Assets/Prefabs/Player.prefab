@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 8419627893303983318}
   - component: {fileID: 8141059765481669652}
   - component: {fileID: 5197272100658636680}
+  - component: {fileID: 7826669953754006755}
   m_Layer: 0
   m_Name: Player
   m_TagString: Cat
@@ -467,8 +468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
   _showInfo: 1
   _explanation: "If (IsGrounded(Player)) and when axis horizontal is held (this can
-    only happen every 0.2 seconds):\n          plays sound step at volume 0.6 and
-    a pitch in the range [0.4,0.7]\n"
+    only happen every 0.2 seconds):\n          plays sound catWalkingSmall at volume
+    0.15 and a pitch in the range [0.4,0.7]\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -543,14 +544,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
   _showInfo: 1
-  _explanation: 'Plays sound step at volume 0.15 and a pitch in the range [0.4,0.7]'
+  _explanation: 'Plays sound catWalkingSmall at volume 0.15 and a pitch in the range
+    [0.4,0.7]'
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  clip: {fileID: 8300000, guid: a113ad790de1f6d4d9742a0fc9cce8a1, type: 3}
+  clip: {fileID: 8300000, guid: 514e468ed10775349b9ec2d588613c1c, type: 3}
   volume: {x: 0.15, y: 0.15}
   pitch: {x: 0.4, y: 0.7}
 --- !u!114 &716868327495819274
@@ -567,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
   _showInfo: 1
   _explanation: "If (IsGrounded(Player)) and when button jump is pressed:\n         
-    plays sound jump at volume 1 and at pitch 1\n"
+    plays sound catLanding at volume 0.15 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -642,14 +644,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
   _showInfo: 1
-  _explanation: Plays sound jump at volume 0.15 and at pitch 1
+  _explanation: Plays sound catLanding at volume 0.15 and at pitch 1
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  clip: {fileID: 8300000, guid: df0228d7056d98343b7cf8110fb10b5b, type: 3}
+  clip: {fileID: 8300000, guid: ec83aa2d7ea81194080985854989a52d, type: 3}
   volume: {x: 0.15, y: 0.15}
   pitch: {x: 1, y: 1}
 --- !u!96 &8021920425597388584
@@ -835,7 +837,7 @@ MonoBehaviour:
     tags [Enemy] starts:\n          Sets the current velocity of Player to a speed
     of 0 units/sec, in the current direction.\n          disables component Player
     (OkapiKit.MovementPlatformer)\n          sets animation parameter IsDead of object
-    Player to True\n          plays sound dead at volume 1 and at pitch 1\n then,
+    Player to True\n          plays sound dead at volume 0.15 and at pitch 1\n then,
     at 1.5 seconds, \n          switches to scene splash_screen_gameLogo\n"
   description: Reset Level
   enableTrigger: 1
@@ -1012,3 +1014,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weights
   weight: 0.1
+--- !u!114 &7826669953754006755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164318199248913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46216fa097ecb754babda0f26d640422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
+  _showInfo: 1
+  _explanation: 'Every 5 seconds, trigger the actions::
+
+'
+  description: 
+  enableTrigger: 1
+  allowRetrigger: 1
+  hasPreconditions: 0
+  preConditions: []
+  actions: []
+  startTriggered: 0
+  initialDelayEnable: 0
+  initialDelay: {x: 5, y: 5}
+  timeInterval: {x: 5, y: 5}
