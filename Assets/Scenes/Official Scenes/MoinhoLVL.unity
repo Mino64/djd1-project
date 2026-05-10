@@ -9224,15 +9224,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2062687526034791379, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: volume.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2062687526034791379, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: volume.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2062687526034791379, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: _explanation
-      value: Plays sound exit at volume 0.5 and at pitch 1
+      value: Plays sound exit at volume 0 and at pitch 1
       objectReference: {fileID: 0}
     - target: {fileID: 3212306449907249726, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: m_LocalPosition.x
