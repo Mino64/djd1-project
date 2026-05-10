@@ -1679,7 +1679,6 @@ GameObject:
   m_Component:
   - component: {fileID: 397790143}
   - component: {fileID: 397790144}
-  - component: {fileID: 397790145}
   m_Layer: 0
   m_Name: Background Music
   m_TagString: Untagged
@@ -1715,104 +1714,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a634c1b40b891e448bdfc0876c34d13c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &397790145
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397790142}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d5546a65a9d0e86418affd6d5b278485, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.064
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3025,14 +2927,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: Switches to scene Daniel Level 1 video
+  _explanation: Switches to scene MoinhoLVL
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: Daniel Level 1 video
+  sceneName: MoinhoLVL
 --- !u!114 &784092447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3046,8 +2948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When key R is pressed:\n          switches to scene Daniel Level
-    1 video\n"
+  _explanation: "When key R is pressed:\n          switches to scene MoinhoLVL\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -9287,6 +9188,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2062687526034791379, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
+      propertyPath: volume.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062687526034791379, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
+      propertyPath: volume.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062687526034791379, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
+      propertyPath: _explanation
+      value: Plays sound exit at volume 0.5 and at pitch 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3212306449907249726, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78
@@ -121612,7 +121525,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
@@ -121701,7 +121614,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 1
-  m_SurfaceArc: 180
+  m_SurfaceArc: 234
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
