@@ -12,18 +12,20 @@ public class LadderMovement : MonoBehaviour
     {
         vertical = Input.GetAxis("Vertical");
 
-        if(isLadder && Mathf.Abs(vertical) > 0f)
+        if (isLadder && Mathf.Abs(vertical) > 0f)
         {
             isClimbing = true;
         }
-        
-       if (isClimbing == true)
+
+        if (isClimbing == true)
         {
             catAnimator.SetBool("IsClimbing", true);
+            catAnimator.SetFloat("AbsVelocityY", Mathf.Abs(vertical));
         }
         else
         {
             catAnimator.SetBool("IsClimbing", false);
+            catAnimator.SetFloat("AbsVelocityY", 0f);
         }
     }
     private void FixedUpdate()

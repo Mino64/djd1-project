@@ -12,17 +12,17 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxJumpTime = 0.1f;
     [SerializeField] private float gravityOnJump = 0.75f;
     [SerializeField] private float gravityOnFall = 1.0f;
-    [SerializeField] private int    maxHealth = 3;
+    [SerializeField] private int maxHealth = 3;
     [SerializeField] private float knockbackSpeed = 100.0f;
 
-    private Animator        animator;
-    private SpriteRenderer  spriteRenderer;
-    private Rigidbody2D     rb;
-    private bool            onGround;
-    private int             health; 
-    private float           invulnerabilityTime;
-    private float           blinkTime;
-    private float           knockbackTime;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
+    private bool onGround;
+    private int health;
+    private float invulnerabilityTime;
+    private float blinkTime;
+    private float knockbackTime;
 
     private float jumpTime;
     private float horizontalAxis;
@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
                 }
             }
         }
-        if (knockbackTime> 0.0f)
+        if (knockbackTime > 0.0f)
         {
             knockbackTime -= Time.deltaTime;
         }
@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
             rb.linearVelocity = currentVelocity;
         }
 
-        animator.SetBool("OnGround", onGround);
+        animator.SetBool("IsGrounded", onGround);
         animator.SetFloat("AbsVelocityX", Mathf.Abs(horizontalAxis * speed));
         animator.SetFloat("VelocityY", currentVelocity.y);
 
@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 180, 0);
         else if ((horizontalAxis > 0) && (transform.right.x < 0))
             transform.rotation = Quaternion.identity;
-         
+
         //if (onGround) spriteRenderer.color = Color.green;
         //else spriteRenderer.color = Color.red;
     }
