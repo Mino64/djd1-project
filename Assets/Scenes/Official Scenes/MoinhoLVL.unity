@@ -1812,13 +1812,14 @@ GameObject:
   m_Component:
   - component: {fileID: 397790143}
   - component: {fileID: 397790144}
+  - component: {fileID: 397790145}
   m_Layer: 0
   m_Name: Background Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &397790143
 Transform:
   m_ObjectHideFlags: 0
@@ -24208,11 +24209,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4387551134566170470, guid: 8401b6874d85a084295cf5053aa6ed59, type: 3}
       propertyPath: m_LocalScale.x
-      value: 440.928
+      value: 719.91907
       objectReference: {fileID: 0}
     - target: {fileID: 4387551134566170470, guid: 8401b6874d85a084295cf5053aa6ed59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.680634
+      value: -40.18065
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24521,7 +24522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6552868729103457146, guid: 1df5038a594c77047b2297601ca833d6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 71.59265
+      value: 63.598682
       objectReference: {fileID: 0}
     - target: {fileID: 6552868729103457146, guid: 1df5038a594c77047b2297601ca833d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24529,7 +24530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6552868729103457146, guid: 1df5038a594c77047b2297601ca833d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.366608
+      value: -12.366608
       objectReference: {fileID: 0}
     - target: {fileID: 6552868729103457146, guid: 1df5038a594c77047b2297601ca833d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27345,7 +27346,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &1930133594
 BoxCollider2D:
@@ -27571,6 +27572,7 @@ GameObject:
   - component: {fileID: 2010024741}
   - component: {fileID: 2010024742}
   - component: {fileID: 2010024743}
+  - component: {fileID: 2010024744}
   m_Layer: 11
   m_Name: barco
   m_TagString: Untagged
@@ -27686,7 +27688,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -94.43974}
+  m_Offset: {x: 0, y: -95.50087}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -27696,7 +27698,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 192, y: 27.92022}
+  m_Size: {x: 192, y: 34.286987}
   m_EdgeRadius: 0
 --- !u!50 &2010024742
 Rigidbody2D:
@@ -27723,7 +27725,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &2010024743
 BoxCollider2D:
@@ -27759,7 +27761,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -125.520004}
+  m_Offset: {x: 0, y: -129.7645}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -27769,7 +27771,53 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 197.8, y: 8.599953}
+  m_Size: {x: 197.8, y: 17.088913}
+  m_EdgeRadius: 0
+--- !u!61 &2010024744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010024738}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 94.71365, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 192, y: 255}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 15.788544, y: 255}
   m_EdgeRadius: 0
 --- !u!1 &2049790828
 GameObject:
