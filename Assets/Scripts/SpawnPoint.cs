@@ -24,9 +24,12 @@ public class SpawnPoint : MonoBehaviour
             return;
         }
 
-        player.SetActive(false);
+        Instantiate(player);
         player.transform.position = currentPoint.position;
-        player.SetActive(true);
+
+        /*player.SetActive(false);
+        player.transform.position = currentPoint.position;
+        player.SetActive(true);*/
     }
 
     void Update()
