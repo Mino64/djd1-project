@@ -7,6 +7,7 @@ public class Points : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         parent.SetCurrentPoint(transform, collision);
+        Debug.Log("passed");
     }
 
 }

@@ -7,12 +7,21 @@ public class SpawnPoint : MonoBehaviour
     [SerializeField] private Transform[] points;
 
     private Transform currentPoint;
+        private void Start()
+    {
+        // If the scene was reloaded via the pause menu, restore the last checkpoint position
+        if (CollectibleManager.Instance != null && CollectibleManager.Instance.LastCheckpointPosition.HasValue)
+        {
+            player.transform.position = CollectibleManager.Instance.LastCheckpointPosition.Value;
+        }
+    }
 
     public void SetCurrentPoint(Transform point, Collider2D collision)
     {
-        if (!collision.CompareTag("Cat")) return;
+        if (collision.GetComponent<Player>() == null) return;
 
         currentPoint = point;
+         CollectibleManager.Instance?.SetCheckpoint(point.position);
         Debug.Log("Novo spawn: " + currentPoint.position);
     }
 
@@ -24,18 +33,15 @@ public class SpawnPoint : MonoBehaviour
             return;
         }
 
-        Instantiate(player);
+        player.SetActive(false);
         player.transform.position = currentPoint.position;
-
-        /*player.SetActive(false);
-        player.transform.position = currentPoint.position;
-        player.SetActive(true);*/
+        player.SetActive(true);
     }
 
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+      /*  if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             player.SetActive(false);
         }
@@ -44,6 +50,6 @@ public class SpawnPoint : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             Respawn();
-        }
+        }*/
     }
 }
