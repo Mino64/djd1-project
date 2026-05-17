@@ -10,6 +10,8 @@ public class PauseMenu : MonoBehaviour
     [Header("Collectible Slots")]
     [SerializeField] private Image[] collectibleSlots = new Image[5];
     [SerializeField] private Sprite[] collectedSprites = new Sprite[5];
+    [SerializeField] private float opacity = 0.25f;
+
 
     [Header("Main Menu")]
     [SerializeField] private string mainMenuSceneName = "MenuInicial";
@@ -115,7 +117,7 @@ public class PauseMenu : MonoBehaviour
             }
             else
             {
-                collectibleSlots[i].color = new Color(1f, 1f, 1f, 0.25f);
+                collectibleSlots[i].color = new Color(1f, 1f, 1f, opacity);
             }
         }
     }
