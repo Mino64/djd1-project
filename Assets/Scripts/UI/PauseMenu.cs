@@ -9,17 +9,12 @@ public class PauseMenu : MonoBehaviour
 
     [Header("Collectible Slots")]
     [SerializeField] private Image[] collectibleSlots = new Image[5];
-    [SerializeField] private Sprite[] collectedSprites = new Sprite[5];
     [SerializeField] private float opacity = 0.25f;
-
 
     [Header("Main Menu")]
     [SerializeField] private string mainMenuSceneName = "MenuInicial";
 
-
     private bool isPaused = false;
-
-    // ─── Unity Messages ────────────────────────────────────────────────────────
 
     private void Update()
     {
@@ -39,7 +34,7 @@ public class PauseMenu : MonoBehaviour
         RefreshCollectibleSlots();
     }
 
-    //Pause / Resume
+    // Pause / Resume
 
     public void Pause()
     {
@@ -56,7 +51,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
-    //Input while paused
+    // Input while paused
 
     private void HandlePausedInput()
     {
@@ -67,7 +62,7 @@ public class PauseMenu : MonoBehaviour
             return;
         }
 
-        // R → reset to last checkpoint (respawn), then reload current scene
+        // R → reset to last checkpoint, then reload current scene
         if (Input.GetKeyDown(KeyCode.R))
         {
             ResetLevel();
@@ -81,16 +76,13 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-
-
     public void ResetLevel()
     {
         Time.timeScale = 1f;
         isPaused = false;
-
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
@@ -109,10 +101,11 @@ public class PauseMenu : MonoBehaviour
             if (collectibleSlots[i] == null) continue;
 
             bool isCollected = i < collected.Length && collected[i];
+            Sprite sprite = CollectibleManager.Instance.GetSprite(i);
 
-            if (isCollected && i < collectedSprites.Length && collectedSprites[i] != null)
+            if (isCollected && sprite != null)
             {
-                collectibleSlots[i].sprite = collectedSprites[i];
+                collectibleSlots[i].sprite = sprite;
                 collectibleSlots[i].color = Color.white;
             }
             else
