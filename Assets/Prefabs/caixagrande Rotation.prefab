@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 7990104068275425285}
   - component: {fileID: 865450591072483588}
   - component: {fileID: 5905469395458385635}
+  - component: {fileID: 2623284237639646353}
   - component: {fileID: 8480874842871072727}
   - component: {fileID: 8064864761455541127}
+  - component: {fileID: 1944768907185279512}
   m_Layer: 11
   m_Name: caixagrande Rotation
   m_TagString: Box
@@ -121,6 +123,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &2623284237639646353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5326280930378994135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910c51e5d34aa064a8b2304eac092ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoxLand
+  landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
+  animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
+  minImpactVelocity: 2
 --- !u!61 &8480874842871072727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +197,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weights
   weight: 2
+--- !u!114 &1944768907185279512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5326280930378994135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2649edfd284534fb1543022ff8a921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoxSound
+  soundStart: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
+  soundMiddle: {fileID: 8300000, guid: ab002ed2f1b93734bb63bfeb3764b3fb, type: 3}
+  soundEnd: {fileID: 8300000, guid: 7bf70e128977e2246a0b79e5ac35545b, type: 3}
+  moveThreshold: 0.1

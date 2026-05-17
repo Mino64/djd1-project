@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 630601896094737768}
   - component: {fileID: 8799153107731614091}
   - component: {fileID: 2638236080282260770}
+  - component: {fileID: 7949553741322541668}
   - component: {fileID: 3652122491601713025}
   m_Layer: 0
   m_Name: Water
@@ -167,6 +168,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7949553741322541668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754200567841983713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fe7e8422c7b245b68fc82e2e6c9a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Water
+  splashSound: {fileID: 8300000, guid: e32b7d458544b2b409b391edd28bfeeb, type: 3}
+  volume: 1
+  splashAnimationPrefab: {fileID: 1365352922309148418, guid: eb5d055f754123c41b78fecd82243632, type: 3}
+  splashOffsetY: 10
 --- !u!114 &3652122491601713025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,3 +324,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterActivator
   risingWater: {fileID: 3652122491601713025}
+  objetoAlvo: {fileID: 0}

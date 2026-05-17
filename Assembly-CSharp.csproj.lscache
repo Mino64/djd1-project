@@ -50,15 +50,17 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.1
 /warnaserror+:NU1605
 
 [sourceFiles]
-Assets/Scripts/Environment/Scale/
- PlatformWeight.cs
- Scale.cs
-Assets/Scripts/Environment/Seesaw/
- SeesawDetector2D.cs
- SmoothSeesaw2D.cs
-Assets/Scripts/Environment/Wet/
- RisingWater.cs
- WaterTrigger.cs
+Assets/Scripts/Environment/
+ Collectible/Collectible.cs
+ Scale/
+  PlatformWeight.cs
+  Scale.cs
+ Seesaw/
+  SeesawDetector2D.cs
+  SmoothSeesaw2D.cs
+ Wet/
+  RisingWater.cs
+  WaterTrigger.cs
 Assets/Scripts/KenScripts/
  AbrirEFecharPortaFinal.cs
  LigaEDesligaEscuridao.cs
@@ -66,8 +68,14 @@ Assets/Scripts/KenScripts/
  Rope.cs
  TriggerLigarEDesligar.cs
 Assets/Scripts/KirinScripts/
- Box_Audio.cs
+ box_collision_ground.cs
+ Box_Sound.cs
  CameraFollow.cs
+ Cloud_movement_1.cs
+ Cloud_movement_2.cs
+ Cloud_movement_3.cs
+ StopOnTrigger.cs
+ Water.cs
 Assets/Scripts/Movement/
  LadderMovement.cs
  Player.cs
@@ -77,6 +85,7 @@ Assets/Scripts/
  SpawnPoint.cs
  UI/
   AnimacaoSaidaSplashScreen.cs
+  CollectibleManager.cs
   FirstButtonSelected.cs
   MainMenu.cs
   Mouse Visibility.cs
@@ -84,7 +93,7 @@ Assets/Scripts/
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
 
 [metadataReferences]
-../../../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Managed/UnityEngine/
+../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Managed/UnityEngine/
  UnityEditor.AccessibilityModule.dll
  UnityEditor.AdaptivePerformanceModule.dll
  UnityEditor.AssetComplianceModule.dll
@@ -219,7 +228,7 @@ Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
  UnityEngine.VRModule.dll
  UnityEngine.WindModule.dll
  UnityEngine.XRModule.dll
-../../../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/
+../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/
  mscorlib.dll
  System.ComponentModel.Composition.dll
  System.Core.dll
@@ -237,7 +246,7 @@ Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
  System.Xml.dll
  System.Xml.Linq.dll
  System.Xml.Serialization.dll
-../../../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/
+../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/
  Microsoft.Win32.Primitives.dll
  System.AppContext.dll
  System.Buffers.dll
@@ -341,9 +350,12 @@ Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
  System.Xml.XmlSerializer.dll
  System.Xml.XPath.dll
  System.Xml.XPath.XDocument.dll
-../../../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/NetStandard/
+../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/NetStandard/
  Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll
  ref/2.1.0/netstandard.dll
+../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/
+ Unity.Android.Gradle.dll
+ Unity.Android.Types.dll
 Library/PackageCache/com.unity.collections@aea9d3bd5e19/
  Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll
  Unity.Collections.Tests/
@@ -433,11 +445,11 @@ Library/ScriptAssemblies/
  UnityEngine.UI.dll
 
 [analyzerReferences]
-../../../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/
+../../../../../../../Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/
  Unity.Properties.SourceGenerator.dll
  Unity.SourceGenerators.dll
  Unity.UIToolkit.SourceGenerator.dll
-../../../../../../../.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll
+../../../../../.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll
 
 [analyzerConfigFiles]
 Temp/obj/Assembly-CSharp/Assembly-CSharp.GeneratedMSBuildEditorConfig.editorconfig
