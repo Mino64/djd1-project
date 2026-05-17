@@ -23639,10 +23639,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5617029899980391212, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2066038220}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
 --- !u!4 &1062180553 stripped
 Transform:
@@ -43865,28 +43862,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &2066038210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5617029899980391212, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
-  m_PrefabInstance: {fileID: 1062180552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2066038220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066038210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
-  _showInfo: 1
-  _explanation: 
-  description: 
-  hypertags:
-  - {fileID: 11400000, guid: 15edcc3cfa00a4e2fba5f80bcf8774c8, type: 2}
 --- !u!1 &2068600836 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7475838607159452633, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
