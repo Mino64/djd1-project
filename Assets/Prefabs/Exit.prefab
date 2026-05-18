@@ -12,10 +12,7 @@ GameObject:
   - component: {fileID: 6597085899173402024}
   - component: {fileID: 3161051342259790645}
   - component: {fileID: 1397701324280472419}
-  - component: {fileID: 3326127352574569167}
-  - component: {fileID: 2062687526034791379}
-  - component: {fileID: 1388998762508833019}
-  - component: {fileID: 7043272412361900574}
+  - component: {fileID: 8656473382736965827}
   m_Layer: 7
   m_Name: Exit
   m_TagString: Untagged
@@ -83,12 +80,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -982488135
-  m_SortingLayer: -3
+  m_SortingLayerID: -1667940007
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7341407202210888751, guid: 37a5a48259b5c17478d2f614694db342, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -170,7 +167,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6, y: 11}
   m_EdgeRadius: 0
---- !u!114 &3326127352574569167
+--- !u!114 &8656473382736965827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,95 +176,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4681618858591253119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b66a51b7fe64c4390ac471b7df316b, type: 3}
+  m_Script: {fileID: 11500000, guid: a7111a3aa77c8c8498ff09b349c3d3a7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnCollision
-  _showInfo: 1
-  _explanation: "When a collision with a trigger with tags [Player] starts:\n         
-    plays sound exit at volume 1 and at pitch 1\n          destroys objects with
-    tags [Player] \n then, at 1 seconds, \n          switches to scene Daniel Level
-    1 video\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 2062687526034791379}
-  - delay: 0
-    action: {fileID: 1388998762508833019}
-  - delay: 1
-    action: {fileID: 7043272412361900574}
-  isTrigger: 1
-  eventType: 0
-  tags:
-  - {fileID: 11400000, guid: 15edcc3cfa00a4e2fba5f80bcf8774c8, type: 2}
---- !u!114 &2062687526034791379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4681618858591253119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 766d16681200cf841a49e1df59f6076f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
-  _showInfo: 1
-  _explanation: Plays sound exit at volume 1 and at pitch 1
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  clip: {fileID: 8300000, guid: 5cad3b3d9e5d98b4f9687cc5cb616c4a, type: 3}
-  volume: {x: 1, y: 1}
-  pitch: {x: 1, y: 1}
---- !u!114 &1388998762508833019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4681618858591253119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e75877c0562c0e49a1475541c319262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionDestroyObject
-  _showInfo: 1
-  _explanation: 'Destroys objects with tags [Player] '
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: 4
-  targetObject: {fileID: 0}
-  tags:
-  - {fileID: 11400000, guid: 15edcc3cfa00a4e2fba5f80bcf8774c8, type: 2}
---- !u!114 &7043272412361900574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4681618858591253119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b12253cfd341aa46a3a6fcba7709af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
-  _showInfo: 1
-  _explanation: Switches to scene Daniel Level 1 video
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  sceneName: Daniel Level 1 video
+  m_EditorClassIdentifier: '::'
+  outroAnimator: {fileID: 0}
+  _sceneName: MoinhoLVL
