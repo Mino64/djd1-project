@@ -293,6 +293,40 @@ public class BoxSound : MonoBehaviour
         Debug.Log("AudioSource stopped. Is playing: " + audioSource.isPlaying);
     }
 }*/
+/*
+using UnityEngine;
+
+public class BoxSound : MonoBehaviour
+{
+    [Header("Sound")]
+    [SerializeField] private AudioClip pushSound;
+
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
+        audioSource.clip = pushSound;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<Player>())
+        {
+            audioSource.Play();
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<Player>())
+        {
+            audioSource.Stop();
+        }
+    }
+}*/
 
 using UnityEngine;
 
@@ -315,6 +349,10 @@ public class BoxSound : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Player>())
         {
+            // Ignore if cat is on top of the box
+            if (collision.gameObject.transform.position.y > transform.position.y)
+                return;
+
             audioSource.Play();
         }
     }

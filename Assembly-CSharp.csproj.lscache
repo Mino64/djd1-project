@@ -70,6 +70,7 @@ Assets/Scripts/KenScripts/
  TriggerLigarEDesligar.cs
  TrocaDeCena.cs
 Assets/Scripts/KirinScripts/
+ BoxAudio.cs
  box_collision_ground.cs
  Box_Sound.cs
  CameraFollow.cs

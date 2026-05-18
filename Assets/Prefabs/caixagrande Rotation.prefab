@@ -138,11 +138,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxLand
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
+  landVolume: 0.62
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
   groundLayers:
     serializedVersion: 2
     m_Bits: 0
+  soundCooldown: 0.5
 --- !u!61 &8480874842871072727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -214,9 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2649edfd284534fb1543022ff8a921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSound
-  soundStart: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
-  soundMiddle: {fileID: 8300000, guid: a60291c270b3e444c8ca14289e2821a1, type: 3}
-  moveThreshold: 0.1
+  pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
 --- !u!114 &3508175499342240061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,11 +230,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxLand
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
+  landVolume: 1
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
   groundLayers:
     serializedVersion: 2
     m_Bits: 2112
+  soundCooldown: 0.5
 --- !u!82 &-48565533191421223
 AudioSource:
   m_ObjectHideFlags: 0
