@@ -63,6 +63,7 @@ Assets/Scripts/Environment/
   WaterTrigger.cs
 Assets/Scripts/KenScripts/
  AbrirEFecharPortaFinal.cs
+ AnimacaoAguaSubindo.cs
  LigaEDesligaEscuridao.cs
  PushLeft.cs
  Rope.cs
