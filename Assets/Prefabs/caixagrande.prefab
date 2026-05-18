@@ -196,8 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   soundStart: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
-  soundMiddle: {fileID: 8300000, guid: ab002ed2f1b93734bb63bfeb3764b3fb, type: 3}
-  soundEnd: {fileID: 8300000, guid: 7bf70e128977e2246a0b79e5ac35545b, type: 3}
+  soundMiddle: {fileID: 8300000, guid: a60291c270b3e444c8ca14289e2821a1, type: 3}
   moveThreshold: 0.1
 --- !u!114 &-8145423085864874182
 MonoBehaviour:
@@ -230,7 +229,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.22
   m_Pitch: 1
   Loop: 0
   Mute: 0
