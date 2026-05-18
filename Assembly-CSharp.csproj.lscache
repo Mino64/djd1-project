@@ -73,8 +73,6 @@ Assets/Scripts/KirinScripts/
  Box_Sound.cs
  CameraFollow.cs
  Cloud_movement_1.cs
- Cloud_movement_2.cs
- Cloud_movement_3.cs
  StopOnTrigger.cs
  Water.cs
 Assets/Scripts/Movement/
