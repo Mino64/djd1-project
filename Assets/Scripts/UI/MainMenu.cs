@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject objetoAlvo4;
 
 
-    private void PlayGame()
+    public void PlayGame()
     {
         //Coisas do Ken
         objetoAlvo1.SetActive(false);
