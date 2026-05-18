@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 325039317996354665}
   - component: {fileID: 5495481169879919547}
   - component: {fileID: -3547454766928513962}
+  - component: {fileID: -8179170659630347612}
+  - component: {fileID: -5265182567858156579}
   m_Layer: 11
   m_Name: CaixaNormal
   m_TagString: Box
@@ -51,6 +53,9 @@ MonoBehaviour:
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1138159304306217202
 SpriteRenderer:
   serializedVersion: 2
@@ -199,3 +204,118 @@ MonoBehaviour:
   soundMiddle: {fileID: 8300000, guid: ab002ed2f1b93734bb63bfeb3764b3fb, type: 3}
   soundEnd: {fileID: 8300000, guid: 7bf70e128977e2246a0b79e5ac35545b, type: 3}
   moveThreshold: 0.1
+--- !u!114 &-8179170659630347612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488682306070787268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910c51e5d34aa064a8b2304eac092ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoxLand
+  landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
+  animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
+  minImpactVelocity: 2
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 2112
+--- !u!82 &-5265182567858156579
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488682306070787268}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
