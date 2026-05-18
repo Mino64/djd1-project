@@ -68,6 +68,7 @@ Assets/Scripts/KenScripts/
  PushLeft.cs
  Rope.cs
  TriggerLigarEDesligar.cs
+ TrocaDeCena.cs
 Assets/Scripts/KirinScripts/
  box_collision_ground.cs
  Box_Sound.cs
