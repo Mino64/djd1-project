@@ -165,7 +165,7 @@ public class BoxSound : MonoBehaviour
         audioSource.Play();
     }
 }*/
-
+/*
 using UnityEngine;
 
 public class BoxSound : MonoBehaviour
@@ -225,5 +225,105 @@ public class BoxSound : MonoBehaviour
     {
         CancelInvoke(nameof(PlayMiddle));
         audioSource.Stop();
+    }
+}*/
+/*
+using UnityEngine;
+
+public class BoxSound : MonoBehaviour
+{
+    [Header("Sounds")]
+    public AudioClip soundStart;
+    public AudioClip soundMiddle;
+
+    [Header("Push Detection")]
+    public float moveThreshold = 0.1f;
+
+    private Rigidbody2D rb;
+    private AudioSource audioSource;
+    private bool isMoving = false;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.loop = false;
+        audioSource.playOnAwake = false;
+    }
+
+    void Update()
+    {
+        bool boxIsMoving = rb.linearVelocity.magnitude > moveThreshold;
+
+        Debug.Log("Box velocity: " + rb.linearVelocity.magnitude + " | isMoving: " + isMoving);
+
+        if (boxIsMoving && !isMoving)
+        {
+            isMoving = true;
+            PlayStart();
+        }
+        else if (!boxIsMoving && isMoving)
+        {
+            isMoving = false;
+            Debug.Log("STOPPING SOUND NOW");
+            StopSound();
+        }
+    }
+
+    void PlayStart()
+    {
+        audioSource.loop = false;
+        audioSource.clip = soundStart;
+        audioSource.Play();
+        Invoke(nameof(PlayMiddle), soundStart.length);
+    }
+
+    void PlayMiddle()
+    {
+        if (!isMoving) return;
+        audioSource.loop = true;
+        audioSource.clip = soundMiddle;
+        audioSource.Play();
+    }
+
+    void StopSound()
+    {
+        CancelInvoke(nameof(PlayMiddle));
+        audioSource.Stop();
+        Debug.Log("AudioSource stopped. Is playing: " + audioSource.isPlaying);
+    }
+}*/
+
+using UnityEngine;
+
+public class BoxSound : MonoBehaviour
+{
+    [Header("Sound")]
+    public AudioClip pushSound;
+
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
+        audioSource.clip = pushSound;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            audioSource.Play();
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            audioSource.Stop();
+        }
     }
 }

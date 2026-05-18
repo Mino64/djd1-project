@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class BoxLand : MonoBehaviour
 {
@@ -74,3 +74,48 @@ public class BoxLand : MonoBehaviour
         animator.SetTrigger("Land");
     }
 }*/
+
+using UnityEngine;
+
+public class BoxLand : MonoBehaviour
+{
+    [Header("Sound")]
+    public AudioClip landSound;
+
+    [Header("Animation")]
+    public Animator animator;
+
+    [Header("Settings")]
+    public float minImpactVelocity = 2f;
+    public LayerMask groundLayers;
+    public float soundCooldown = 1f; // 500 milliseconds
+
+    private AudioSource audioSource;
+    private float lastSoundTime = 0f; // ensures sound can play immediately on first hit
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check if the collided object is on any of the selected layers
+        if ((groundLayers.value & (1 << collision.gameObject.layer)) == 0) return;
+
+        // Only trigger if falling fast enough
+        float impactSpeed = Mathf.Abs(collision.relativeVelocity.y);
+        if (impactSpeed < minImpactVelocity) return;
+
+        // Only trigger if cooldown has passed
+        if (Time.time - lastSoundTime < soundCooldown) return;
+
+        // Play sound
+        audioSource.PlayOneShot(landSound);
+        lastSoundTime = Time.time;
+        Debug.Log("Sound played");
+
+        // Trigger animation
+        animator.SetTrigger("Land");
+    }
+}
