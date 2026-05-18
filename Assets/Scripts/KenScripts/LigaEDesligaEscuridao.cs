@@ -3,14 +3,14 @@ using UnityEngine;
 public class LigaEDesligaEscuridao : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [SerializeField] GameObject objetoAlvo;
-    [SerializeField] Animator outroAnimator;
+    [SerializeField] private GameObject objetoAlvo;
+    [SerializeField] private Animator outroAnimator;
 
-    bool estaVisivel = true;
+    private bool estaVisivel = true;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Cat"))
+        if (other.GetComponent<Player>())
         {
             if (estaVisivel == false)
             {

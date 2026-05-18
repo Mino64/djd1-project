@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class LadderMovement : MonoBehaviour
 {
-    private float vertical;
+
     [SerializeField] private float speed = 8f;
-    private bool isLadder;
-    private bool isClimbing;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator catAnimator;
+
+    private float vertical;
+    private bool isLadder;
+    private bool isClimbing;
     private void Update()
     {
         vertical = Input.GetAxis("Vertical");

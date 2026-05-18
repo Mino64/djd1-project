@@ -5,14 +5,19 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [Header("UI")]
-    [SerializeField] private GameObject pauseUI;
+    [SerializeField]
+    private GameObject pauseUI;
 
     [Header("Collectible Slots")]
-    [SerializeField] private Image[] collectibleSlots = new Image[5];
-    [SerializeField] private float opacity = 0.25f;
+    [SerializeField]
+    private Image[] collectibleSlots = new Image[5];
+    
+    [SerializeField]
+    private float opacity = 0.25f;
 
     [Header("Main Menu")]
-    [SerializeField] private string mainMenuSceneName = "MenuInicial";
+    [SerializeField]
+    private string mainMenuSceneName = "MenuInicial";
 
     private bool isPaused = false;
 

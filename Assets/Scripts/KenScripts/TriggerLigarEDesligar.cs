@@ -11,7 +11,7 @@ public class TriggerLigarEDesligar : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Cat"))
+        if (other.GetComponent<Player>())
         {
             if (estaVisivel == false)
             {

@@ -3,9 +3,9 @@ using UnityEngine;
 public class CloudMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float speed = 0.5f;          // how fast the cloud moves
-    public float resetX = -15f;         // where the cloud resets (left side, off screen)
-    public float startX = 15f;          // where the cloud resets to (right side, off screen)
+    [SerializeField] private float speed = 0.5f;          // how fast the cloud moves
+    [SerializeField] private float resetX = -15f;         // where the cloud resets (left side, off screen)
+    [SerializeField] private float startX = 15f;          // where the cloud resets to (right side, off screen)
 
     void Update()
     {

@@ -80,15 +80,20 @@ using UnityEngine;
 public class BoxLand : MonoBehaviour
 {
     [Header("Sound")]
-    public AudioClip landSound;
+    [SerializeField]
+    private AudioClip landSound;
 
     [Header("Animation")]
-    public Animator animator;
+    [SerializeField]
+    private Animator animator;
 
     [Header("Settings")]
-    public float minImpactVelocity = 2f;
-    public LayerMask groundLayers;
-    public float soundCooldown = 1f; // 500 milliseconds
+    [SerializeField]
+    private float minImpactVelocity = 2f;
+    [SerializeField]
+    private LayerMask groundLayers;
+    [SerializeField]
+    private float soundCooldown = 1f; // 500 milliseconds
 
     private AudioSource audioSource;
     private float lastSoundTime = 0f; // ensures sound can play immediately on first hit

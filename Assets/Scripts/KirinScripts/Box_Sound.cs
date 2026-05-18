@@ -299,7 +299,7 @@ using UnityEngine;
 public class BoxSound : MonoBehaviour
 {
     [Header("Sound")]
-    public AudioClip pushSound;
+    [SerializeField] private AudioClip pushSound;
 
     private AudioSource audioSource;
 
@@ -313,7 +313,7 @@ public class BoxSound : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.GetComponent<Player>())
         {
             audioSource.Play();
         }
@@ -321,7 +321,7 @@ public class BoxSound : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.GetComponent<Player>())
         {
             audioSource.Stop();
         }

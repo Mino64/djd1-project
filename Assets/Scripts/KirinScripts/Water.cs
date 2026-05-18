@@ -62,12 +62,16 @@ using UnityEngine;
 public class WaterInteraction : MonoBehaviour
 {
     [Header("Sound")]
-    public AudioClip splashSound;
-    [Range(0f, 1f)] public float volume = 1f;
+    [SerializeField]
+    private AudioClip splashSound;
+    [Range(0f, 1f)][SerializeField]
+    private float volume = 1f;
 
     [Header("Animation")]
-    public GameObject splashAnimationPrefab;
-    public float splashOffsetY = 0f;
+    [SerializeField]
+    private GameObject splashAnimationPrefab;
+    [SerializeField]
+    private float splashOffsetY = 0f;
 
     private AudioSource audioSource;
 
