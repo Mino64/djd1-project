@@ -44,5 +44,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Test Scenes/Level 2.unity
     guid: 66b3e83dfd332724193ab3205804b253
+  - enabled: 1
+    path: Assets/Scenes/Official Scenes/Lvl2TesteAgua.unity
+    guid: a249e4636abf5e940a6217d2268b9c71
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
