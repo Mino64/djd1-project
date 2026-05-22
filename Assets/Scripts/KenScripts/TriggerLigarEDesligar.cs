@@ -15,7 +15,7 @@ public class TriggerLigarEDesligar : MonoBehaviour
         {
             if (estaVisivel == false)
             {
-                outroAnimator.Play("FadeOut");
+                //outroAnimator.Play("FadeOut");
             }
             else
             {
@@ -28,7 +28,7 @@ public class TriggerLigarEDesligar : MonoBehaviour
 
     void MudarEstado()
     {
-        estaVisivel = !estaVisivel;
+        estaVisivel = false;
         //objetoAlvo.SetActive(estaVisivel);
     }
 

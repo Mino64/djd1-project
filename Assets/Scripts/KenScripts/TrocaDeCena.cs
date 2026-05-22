@@ -4,12 +4,14 @@ using UnityEngine.SceneManagement;
 public class TrocaDeCena : MonoBehaviour
 {
     [SerializeField] Animator outroAnimator;
+    [SerializeField] GameObject agua;
     [SerializeField]
     private string _sceneName;
 
 
     void PassaCena(){
 
+        agua.SetActive(false);
         outroAnimator.Play("AguaSubindoMenus");
         Invoke("PassaProxima", 2f); // tempo da animação
     }
