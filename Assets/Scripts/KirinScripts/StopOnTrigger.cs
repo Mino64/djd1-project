@@ -1,43 +1,33 @@
-using System.Collections;
 using UnityEngine;
 
 public class StopOnTrigger : MonoBehaviour
 {
-    public float stopDuration = 5f;
+    [SerializeField] private float shakeDuration  = 0.4f;
+    [SerializeField] private float shakeMagnitude = 0.15f;
+
     private bool hasTriggered = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log($"Trigger entered by: {other.name}, tag: {other.tag}");
+
         if (hasTriggered) return;
 
         if (other.CompareTag("Cat"))
         {
             Player player = other.GetComponent<Player>();
+            Debug.Log($"Player component found: {player != null}");
+
             if (player != null)
             {
                 hasTriggered = true;
-                StartCoroutine(FreezePlayer(player));
+
+                CameraFollow cam = Camera.main.GetComponent<CameraFollow>();
+                Debug.Log($"CameraFollow found: {cam != null}");
+
+                if (cam != null)
+                    cam.Shake(shakeDuration, shakeMagnitude);
             }
         }
-    }
-
-    private IEnumerator FreezePlayer(Player player)
-    {
-        Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
-        Animator animator = player.GetComponent<Animator>();
-
-        if (rb != null) rb.linearVelocity = Vector2.zero;
-
-        if (animator != null)
-        {
-            animator.SetFloat("AbsVelocityX", 0f);
-            animator.SetBool("IsGrounded", true);
-        }
-
-        player.enabled = false;
-
-        yield return new WaitForSeconds(stopDuration);
-
-        player.enabled = true;
     }
 }
