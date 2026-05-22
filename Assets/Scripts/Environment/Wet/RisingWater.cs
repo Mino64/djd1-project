@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,14 +8,21 @@ public class RisingWater : MonoBehaviour
     [SerializeField] private float riseSpeed = 1f;
     [SerializeField] private float maxY = 20f;
 
+
     [Header("Scene")]
     [SerializeField] private string levelSceneName;
+    [SerializeField] private float deathTime = 1f;
 
     private bool isRising = false;
+    private GameObject player;
 
     public void StartRising()
     {
         isRising = true;
+    }
+    void Start()
+    {
+         player = FindAnyObjectByType<Player>().gameObject;
     }
 
     void Update()
@@ -30,12 +38,15 @@ public class RisingWater : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Cat"))
-            ResetLevel();
+        if (other.GetComponent<Player>())
+
+            StartCoroutine(ResetLevel());
     }
 
-    void ResetLevel()
+    IEnumerator ResetLevel()
     {
+        player.GetComponent<Player>().enabled = false;
+        yield return new WaitForSeconds(deathTime);
         SceneManager.LoadScene(levelSceneName);
     }
 }
