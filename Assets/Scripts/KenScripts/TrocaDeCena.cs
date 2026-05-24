@@ -5,8 +5,7 @@ public class TrocaDeCena : MonoBehaviour
 {
     [SerializeField] Animator outroAnimator;
     [SerializeField] GameObject agua;
-    [SerializeField]
-    private string _sceneName;
+    [SerializeField] private int _sceneNumber;
 
 
     void PassaCena(){
@@ -18,7 +17,7 @@ public class TrocaDeCena : MonoBehaviour
 
     void PassaProxima()
     {
-        SceneManager.LoadScene(_sceneName);
+        SceneManager.LoadScene(_sceneNumber);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

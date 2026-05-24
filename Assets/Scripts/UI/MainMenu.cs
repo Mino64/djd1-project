@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField]
-    private string _sceneName;
+    private int _sceneNumber;
 
     // Coisas do Ken
     [SerializeField] Animator outroAnimator;
@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
 
     void ComecaJogo()
     {
-        SceneManager.LoadScene(_sceneName);
+        SceneManager.LoadScene(_sceneNumber);
     }
 
     public void QuitGame()

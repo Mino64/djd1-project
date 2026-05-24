@@ -15,9 +15,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private float opacity = 0.25f;
 
-    [Header("Main Menu")]
-    [SerializeField]
-    private string mainMenuSceneName = "MenuInicial";
+    private int mainMenuSceneName = 2;
 
     private bool isPaused = false;
 

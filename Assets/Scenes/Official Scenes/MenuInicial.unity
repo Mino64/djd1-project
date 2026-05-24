@@ -850,7 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34fc0b9f6950a9459a67ed9ca86e531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  _sceneName: Credits
+  _sceneNumber: 4
   outroAnimator: {fileID: 869239798}
   objetoAlvo1: {fileID: 1790073445}
   objetoAlvo2: {fileID: 1848781202}
@@ -1817,7 +1817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34fc0b9f6950a9459a67ed9ca86e531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  _sceneName: Lvl2TesteAgua
+  _sceneNumber: 5
   outroAnimator: {fileID: 869239798}
   objetoAlvo1: {fileID: 1790073445}
   objetoAlvo2: {fileID: 1848781202}
@@ -2106,7 +2106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34fc0b9f6950a9459a67ed9ca86e531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  _sceneName: Settings
+  _sceneNumber: 3
   outroAnimator: {fileID: 869239798}
   objetoAlvo1: {fileID: 1790073445}
   objetoAlvo2: {fileID: 1848781202}
@@ -2577,7 +2577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34fc0b9f6950a9459a67ed9ca86e531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  _sceneName: 
+  _sceneNumber: 0
   outroAnimator: {fileID: 0}
   objetoAlvo1: {fileID: 0}
   objetoAlvo2: {fileID: 0}

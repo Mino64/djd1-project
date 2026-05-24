@@ -2239,11 +2239,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1281553720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &374511052 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5617029899980391212, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
-  m_PrefabInstance: {fileID: 1062180552}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &387493004
 GameObject:
   m_ObjectHideFlags: 0
@@ -24361,28 +24356,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5617029899980391212, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1062180554}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
 --- !u!4 &1062180553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6195843208436463041, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
   m_PrefabInstance: {fileID: 1062180552}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1062180554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374511052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48929dea459c81443907f2f2015cedaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PushLeft
 --- !u!1 &1067422851
 GameObject:
   m_ObjectHideFlags: 0
@@ -25197,7 +25177,6 @@ MonoBehaviour:
   - {fileID: 1592266615}
   - {fileID: 1536211598780133192}
   opacity: 0.05
-  mainMenuSceneName: MenuInicial
 --- !u!4 &1220173660
 Transform:
   m_ObjectHideFlags: 0
@@ -25324,6 +25303,10 @@ PrefabInstance:
     - target: {fileID: 8656473382736965827, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: _sceneName
       value: Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656473382736965827, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
+      propertyPath: _sceneNumber
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8656473382736965827, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: outroAnimator

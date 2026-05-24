@@ -4,9 +4,9 @@ public class PushLeft : MonoBehaviour
 {
     private void OnCollisionStay2D(Collision2D collision)
 {
-    if (collision.gameObject.CompareTag("Passadeira"))
+    if (collision.gameObject.GetComponent<Player>())
     {
-        transform.position += new Vector3(-1f, 0f, 0f);
+        collision.transform.position += new Vector3(-1f, 0f, 0f);
     }
 }
 
