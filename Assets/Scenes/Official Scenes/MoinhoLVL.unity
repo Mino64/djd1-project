@@ -25393,6 +25393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2023098709332563075, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2384533752380347835, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
       propertyPath: m_Name
       value: Seesaw test(puzzle 2)
@@ -25509,6 +25513,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 4605948470020834904, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
     - {fileID: 4501032279330729735, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
+    - {fileID: 2023098709332563075, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2384533752380347835, guid: b9645a9ee1cf30045a53c99eb0d7a49f, type: 3}
