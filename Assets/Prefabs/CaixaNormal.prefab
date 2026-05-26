@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -3547454766928513962}
   - component: {fileID: -5265182567858156579}
   - component: {fileID: 7409319217211132420}
+  - component: {fileID: 4228524084864325782}
   m_Layer: 11
   m_Name: CaixaNormal
   m_TagString: Box
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSound
   pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
+  animacao: {fileID: 4228524084864325782}
 --- !u!82 &-5265182567858156579
 AudioSource:
   m_ObjectHideFlags: 0
@@ -312,3 +314,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae73d6f4863e9f42a8cd948f3a817f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!95 &4228524084864325782
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488682306070787268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9cb2c5f8962a0f147908a0e701cf06f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

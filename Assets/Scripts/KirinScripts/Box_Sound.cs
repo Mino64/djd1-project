@@ -334,6 +334,7 @@ public class BoxSound : MonoBehaviour
 {
     [Header("Sound")]
     [SerializeField] private AudioClip pushSound;
+    [SerializeField] Animator animacao;
 
     private AudioSource audioSource;
 
@@ -347,6 +348,11 @@ public class BoxSound : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Box"))
+        {
+            animacao.Play("AnimacaoCaixaPequena1Cair", 0, 0f); 
+        }
+
         if (collision.gameObject.GetComponent<Player>())
         {
             // Ignore if cat is on top of the box
@@ -364,4 +370,6 @@ public class BoxSound : MonoBehaviour
             audioSource.Stop();
         }
     }
+
+    
 }
