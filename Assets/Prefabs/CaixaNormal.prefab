@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9206407841949285797}
+  - component: {fileID: -4129427195924392032}
   - component: {fileID: 2465813032549425616}
   - component: {fileID: 1138159304306217202}
   - component: {fileID: 325039317996354665}
@@ -16,6 +17,7 @@ GameObject:
   - component: {fileID: -3547454766928513962}
   - component: {fileID: -5265182567858156579}
   - component: {fileID: 7409319217211132420}
+  - component: {fileID: -5125305761143413427}
   m_Layer: 11
   m_Name: CaixaNormal
   m_TagString: Box
@@ -38,6 +40,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4129427195924392032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488682306070787268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24470a208e3f73841ae6017c94063377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoxAudioOnWater
+  waterSplashClip: {fileID: 8300000, guid: e32b7d458544b2b409b391edd28bfeeb, type: 3}
+  splashVolume: 0.323
 --- !u!114 &2465813032549425616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,7 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxLand
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
-  landVolume: 0.34
+  landVolume: 0.15
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
   groundLayers:
@@ -203,6 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSound
   pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
+  playbackSpeed: 0.5
 --- !u!82 &-5265182567858156579
 AudioSource:
   m_ObjectHideFlags: 0
@@ -312,3 +329,100 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae73d6f4863e9f42a8cd948f3a817f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!82 &-5125305761143413427
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488682306070787268}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

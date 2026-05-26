@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
+  playbackSpeed: 0.25
 --- !u!114 &-8145423085864874182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
-  landVolume: 0.63
+  landVolume: 0.5
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
   groundLayers:
@@ -228,7 +229,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.22
   m_Pitch: 1
   Loop: 0

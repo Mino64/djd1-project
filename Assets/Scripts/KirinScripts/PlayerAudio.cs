@@ -37,8 +37,10 @@ public class PlayerAudio : MonoBehaviour
         audioSource.playOnAwake = false;
     }
 
+    
     void Update()
     {
+        //bool isGrounded = wasGrounded;
         bool isGrounded = IsOnGround();
         float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
         bool isMovingHorizontally = horizontalSpeed > 0.1f;
@@ -72,6 +74,13 @@ public class PlayerAudio : MonoBehaviour
             PlayClip(jumpClip, jumpVolume);
             wasJumping = true;
         }
+        // --- Jump sound ---
+        /*
+        if (isGrounded && Input.GetButtonDown("Jump"))
+        {       
+            PlayClip(jumpClip, jumpVolume);
+            wasJumping = true;
+        }*/
 
         // --- Land sound ---
         // Detects the moment the player touches the ground after being airborne
@@ -83,6 +92,8 @@ public class PlayerAudio : MonoBehaviour
 
         wasGrounded = isGrounded;
     }
+
+
 
     private void PlayFootstep()
     {

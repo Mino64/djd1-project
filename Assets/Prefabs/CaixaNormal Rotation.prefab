@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9206407841949285797}
+  - component: {fileID: 8159259482103953816}
   - component: {fileID: 5356797735536003434}
   - component: {fileID: 1138159304306217202}
   - component: {fileID: 325039317996354665}
@@ -40,6 +41,20 @@ Transform:
   - {fileID: 795598512398230991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8159259482103953816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488682306070787268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24470a208e3f73841ae6017c94063377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoxAudioOnWater
+  waterSplashClip: {fileID: 8300000, guid: e32b7d458544b2b409b391edd28bfeeb, type: 3}
+  splashVolume: 0.323
 --- !u!114 &5356797735536003434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxLand
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
-  landVolume: 0.13
+  landVolume: 0.15
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
   groundLayers:
@@ -218,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSound
   pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
+  playbackSpeed: 0.5
 --- !u!114 &-5151545307300523082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +266,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.22
   m_Pitch: 1
   Loop: 0
