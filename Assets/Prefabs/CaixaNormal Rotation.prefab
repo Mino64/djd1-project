@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxLand
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
-  landVolume: 0.15
+  landVolume: 0.06
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
   groundLayers:
@@ -234,6 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSound
   pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
+  playbackSpeed: 1
   animacao: {fileID: 4382721669916065145}
 --- !u!114 &-5151545307300523082
 MonoBehaviour:
