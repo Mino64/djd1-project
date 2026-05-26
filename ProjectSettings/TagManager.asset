@@ -9,6 +9,7 @@ TagManager:
   - Cat
   - Passadeira
   - TriggerPorta
+  - Ground
   layers:
   - Default
   - TransparentFX

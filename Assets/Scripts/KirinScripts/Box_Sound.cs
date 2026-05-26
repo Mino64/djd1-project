@@ -58,6 +58,11 @@ public class BoxSound : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Box"))
+        {
+            animacao.Play("AnimacaoCaixaPequena1Cair", 0, 0f); 
+        }
+
         if (collision.gameObject.GetComponent<Player>())
         {
             if (collision.gameObject.transform.position.y > transform.position.y)
@@ -75,4 +80,6 @@ public class BoxSound : MonoBehaviour
             audioSource.Stop();
         }
     }
+
+    
 }

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4202796479659509112}
   - component: {fileID: -5151545307300523082}
   - component: {fileID: 8463521114203151586}
+  - component: {fileID: 4382721669916065145}
   m_Layer: 11
   m_Name: CaixaNormal Rotation
   m_TagString: Box
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSound
   pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
-  playbackSpeed: 0.5
+  animacao: {fileID: 4382721669916065145}
 --- !u!114 &-5151545307300523082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,6 +352,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &4382721669916065145
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488682306070787268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d86cbb858224af441a64323540e787c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8664789617395132578
 GameObject:
   m_ObjectHideFlags: 0
