@@ -44,6 +44,7 @@ public class BoxSound : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioClip pushSound;
     [SerializeField] [Range(0.1f, 3f)] private float playbackSpeed = 1f;
+    [SerializeField] Animator animacao;
 
     private AudioSource audioSource;
 
