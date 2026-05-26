@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2638236080282260770}
   - component: {fileID: 7949553741322541668}
   - component: {fileID: 3652122491601713025}
+  - component: {fileID: 32233433923386481}
+  - component: {fileID: 7218422000976177298}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -181,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Water
   splashSound: {fileID: 8300000, guid: e32b7d458544b2b409b391edd28bfeeb, type: 3}
-  volume: 1
+  volume: 0.1
   splashAnimationPrefab: {fileID: 1365352922309148418, guid: eb5d055f754123c41b78fecd82243632, type: 3}
   splashOffsetY: 10
 --- !u!114 &3652122491601713025
@@ -199,6 +201,122 @@ MonoBehaviour:
   riseSpeed: 20
   maxY: 230
   levelSceneName: MoinhoLVL water test
+  deathTime: 1
+--- !u!114 &32233433923386481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754200567841983713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ef2bd59758a6640b87d50a3360221d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RisingWaterSound
+  sound: {fileID: 8300000, guid: 4d2babcf5d17c6744be06bafb0974041, type: 3}
+  audioSource: {fileID: 7218422000976177298}
+  pitch: 0.3
+  volume: 0.1
+  fadeInDuration: 2
+  fadeOutDuration: 1
+--- !u!82 &7218422000976177298
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754200567841983713}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.48
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2280010411248417912
 GameObject:
   m_ObjectHideFlags: 0
