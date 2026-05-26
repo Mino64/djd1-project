@@ -10,6 +10,7 @@ TagManager:
   - Passadeira
   - TriggerPorta
   - Ground
+  - Water
   layers:
   - Default
   - TransparentFX
