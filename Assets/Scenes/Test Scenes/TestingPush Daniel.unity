@@ -510,13 +510,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6142219326169488974, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
+      propertyPath: gravityOnFall
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142219326169488974, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
+      propertyPath: gravityOnJump
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 6195843208436463041, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6195843208436463041, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -61
       objectReference: {fileID: 0}
     - target: {fileID: 6195843208436463041, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: m_LocalPosition.z
@@ -146048,9 +146056,7 @@ MonoBehaviour:
   pauseUI: {fileID: 269392904}
   collectibleSlots:
   - {fileID: 197317750}
-  collectedSprites:
-  - {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  mainMenuSceneName: MenuInicial
+  opacity: 0.25
 --- !u!4 &8603394084322729471
 Transform:
   m_ObjectHideFlags: 0
