@@ -31,7 +31,8 @@ public class CameraFollow : MonoBehaviour
         targetPosition.z = transform.position.z;
 
         Vector3 error = targetPosition - transform.position;
-        Vector3 newPosition = transform.position + error * speed;
+        //Vector3 newPosition = transform.position + error * speed;
+        Vector3 newPosition = Vector3.Lerp(transform.position, targetPosition, speed * Time.fixedDeltaTime);
 
         // shake is added on top after clamping so it isn't eaten by the bounds
         if (boundingBox != null)
@@ -72,4 +73,27 @@ public class CameraFollow : MonoBehaviour
         float clampedY   = Mathf.Clamp(position.y, bounds.min.y + halfHeight, bounds.max.y - halfHeight);
         return new Vector3(clampedX, clampedY, position.z);
     }
+
+
+
+    public void ZoomTo(float targetSize, float duration)
+{
+    StopCoroutine("ZoomCoroutine"); // stop any ongoing zoom
+    StartCoroutine(ZoomCoroutine(targetSize, duration));
+}
+
+private IEnumerator ZoomCoroutine(float targetSize, float duration)
+{
+    float startSize = cam.orthographicSize;
+    float elapsed   = 0f;
+
+    while (elapsed < duration)
+    {
+        cam.orthographicSize = Mathf.Lerp(startSize, targetSize, elapsed / duration);
+        elapsed += Time.deltaTime;
+        yield return null;
+    }
+
+    cam.orthographicSize = targetSize;
+}
 }
