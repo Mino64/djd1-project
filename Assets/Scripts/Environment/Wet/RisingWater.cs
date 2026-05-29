@@ -10,7 +10,7 @@ public class RisingWater : MonoBehaviour
 
 
     [Header("Scene")]
-    [SerializeField] private string levelSceneName;
+    [SerializeField] private int levelSceneNum;
     [SerializeField] private float deathTime = 1f;
 
     private bool isRising = false;
@@ -47,6 +47,6 @@ public class RisingWater : MonoBehaviour
     {
         player.GetComponent<Player>().enabled = false;
         yield return new WaitForSeconds(deathTime);
-        SceneManager.LoadScene(levelSceneName);
+        SceneManager.LoadScene(levelSceneNum);
     }
 }
