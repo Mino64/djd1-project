@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    [SerializeField] private float speed = 230;
+    [SerializeField] private float speed = 1;
     [SerializeField] private Vector3 offset;
     [SerializeField] private BoxCollider2D boundingBox;
 

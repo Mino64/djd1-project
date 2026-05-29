@@ -26324,7 +26324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   target: {fileID: 1062180553}
-  speed: 1
+  speed: 2.5
   offset: {x: 0, y: 25, z: 0}
   boundingBox: {fileID: 2092555407}
 --- !u!1 &1384591421
