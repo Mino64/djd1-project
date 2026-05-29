@@ -473,9 +473,9 @@ MonoBehaviour:
     m_Bits: 2112
   airCollider: {fileID: 6083221293293674397}
   groundCollider: {fileID: 716642545666683421}
-  maxJumpTime: 0.1
-  gravityOnJump: 0
-  gravityOnFall: 1
+  maxJumpTime: 1
+  gravityOnJump: 1
+  gravityOnFall: 2
   maxHealth: 3
   knockbackSpeed: 100
 --- !u!114 &2977480083643760686
