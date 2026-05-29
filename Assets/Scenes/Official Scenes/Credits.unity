@@ -197,8 +197,8 @@ MonoBehaviour:
     Rocha\nKirin Ota\n\nSpecial Thanks\nEverybody that somehow helped us <3\n\nRLY
     RLY THANK YOU FOR PLAYING !!!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bad40eda64c00ce48841dd4fc6f08892, type: 2}
+  m_sharedMaterial: {fileID: -2888702523347521413, guid: bad40eda64c00ce48841dd4fc6f08892, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
