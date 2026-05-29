@@ -7,7 +7,7 @@ public class ScriptsGeraisDasSettings : MonoBehaviour
     [SerializeField] private GameObject objetoScroll;
     private bool estaVisivel = true;
     private bool estaVisivel2 = false;
-    [SerializeField] private string _sceneName;
+    [SerializeField] private int _sceneNum;
 
     // Update is called once per frame
     void Update()
@@ -21,14 +21,9 @@ public class ScriptsGeraisDasSettings : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M) || Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(_sceneName);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(_sceneName);
+            SceneManager.LoadScene(_sceneNum);
         }
     }
 }

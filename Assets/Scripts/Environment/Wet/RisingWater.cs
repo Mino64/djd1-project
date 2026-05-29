@@ -46,6 +46,7 @@ public class RisingWater : MonoBehaviour
     IEnumerator ResetLevel()
     {
         player.GetComponent<Player>().enabled = false;
+        FindAnyObjectByType<CameraFollow>().Freeze();
         yield return new WaitForSeconds(deathTime);
         SceneManager.LoadScene(levelSceneNum);
     }

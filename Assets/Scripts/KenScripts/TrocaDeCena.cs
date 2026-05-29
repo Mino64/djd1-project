@@ -17,6 +17,7 @@ public class TrocaDeCena : MonoBehaviour
 
     void PassaProxima()
     {
+        CollectibleManager.Instance?.ClearCheckpoint();
         SceneManager.LoadScene(_sceneNumber);
     }
 

@@ -48,4 +48,9 @@ public class CollectibleManager : MonoBehaviour
     {
         LastCheckpointPosition = position;
     }
+
+    public void ClearCheckpoint()
+    {
+        LastCheckpointPosition = null;
+    }
 }

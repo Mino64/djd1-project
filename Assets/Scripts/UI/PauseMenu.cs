@@ -11,11 +11,13 @@ public class PauseMenu : MonoBehaviour
     [Header("Collectible Slots")]
     [SerializeField]
     private Image[] collectibleSlots = new Image[5];
-    
+
     [SerializeField]
     private float opacity = 0.25f;
 
-    private int mainMenuSceneName = 2;
+    [Header("Scene swap")]
+    [SerializeField]
+    private int mainMenuSceneNum = 2;
 
     private bool isPaused = false;
 
@@ -90,7 +92,8 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         isPaused = false;
-        SceneManager.LoadScene(mainMenuSceneName);
+        CollectibleManager.Instance?.ClearCheckpoint();
+        SceneManager.LoadScene(mainMenuSceneNum);
     }
 
     public void RefreshCollectibleSlots()
