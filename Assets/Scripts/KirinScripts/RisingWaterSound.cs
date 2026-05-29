@@ -1,37 +1,3 @@
-/*using UnityEngine;
-
-public class RisingWaterSound : MonoBehaviour
-{
-    [SerializeField] private AudioClip sound;
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private float pitch = 1f;
-    [SerializeField] private float volume = 1f;
-
-    private float lastY;
-
-    void Start()
-    {
-        audioSource.clip = sound;
-        audioSource.pitch = pitch;
-        audioSource.volume = volume;
-        audioSource.loop = true;
-        lastY = transform.position.y;
-    }
-
-    void Update()
-    {
-        bool isRising = transform.position.y > lastY;
-
-        if (isRising && !audioSource.isPlaying)
-            audioSource.Play();
-
-        if (!isRising && audioSource.isPlaying)
-            audioSource.Stop();
-
-        lastY = transform.position.y;
-    }
-}*/
-
 using UnityEngine;
 
 public class RisingWaterSound : MonoBehaviour

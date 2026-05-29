@@ -19,39 +19,3 @@ public class CloudMovement : MonoBehaviour
         }
     }
 }
-/*using UnityEngine;
-
-public class CloudMovement : MonoBehaviour
-{
-    [Header("Movement")]
-    public float speed = 0.5f;
-    public float resetX = -15f;
-
-    private float startX; // no longer a public value you set manually
-
-    void Start()
-    {
-        // Remember where THIS cloud started
-        startX = transform.position.x;
-    }
-
-    /*void Update()
-    {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
-
-        if (transform.position.x < resetX)
-        {
-            transform.position = new Vector3(startX, transform.position.y, transform.position.z);
-        }
-    }
-    void Update()
-{
-    Debug.Log(gameObject.name + " position: " + transform.position.x);
-    transform.Translate(Vector3.left * speed * Time.deltaTime);
-
-    if (transform.position.x < resetX)
-    {
-        transform.position = new Vector3(startX, transform.position.y, transform.position.z);
-    }
-}
-}*/
