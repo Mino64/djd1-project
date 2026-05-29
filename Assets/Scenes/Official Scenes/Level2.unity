@@ -1258,7 +1258,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectible
   slotIndex: 4
-  interactKey: 101
 --- !u!212 &195154042
 SpriteRenderer:
   serializedVersion: 2
@@ -3546,7 +3545,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7409319217211132420, guid: 6f25d125c2e6e044e9b75b06b4627490, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -25257,6 +25257,7 @@ MonoBehaviour:
   - {fileID: 1592266615}
   - {fileID: 1536211598780133192}
   opacity: 0.05
+  mainMenuSceneNum: 2
 --- !u!4 &1220173660
 Transform:
   m_ObjectHideFlags: 0
@@ -26327,6 +26328,7 @@ MonoBehaviour:
   speed: 2.5
   offset: {x: 0, y: 25, z: 0}
   boundingBox: {fileID: 2092555407}
+  fallSpeedMultiplier: 3
 --- !u!1 &1384591421
 GameObject:
   m_ObjectHideFlags: 0
