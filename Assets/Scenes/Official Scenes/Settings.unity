@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   objetoAlvo: {fileID: 1309797905}
   objetoScroll: {fileID: 846019964}
-  _sceneName: MenuInicial
+  _sceneName: MainMenu
 --- !u!4 &1862875311
 Transform:
   m_ObjectHideFlags: 0

@@ -24393,18 +24393,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6142219326169488974, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
-      propertyPath: jumpSpeed
-      value: 260
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142219326169488974, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
-      propertyPath: maxJumpTime
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142219326169488974, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
-      propertyPath: gravityOnJump
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6195843208436463041, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.9000015
@@ -26336,7 +26324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   target: {fileID: 1062180553}
-  speed: 1
+  speed: 2.5
   offset: {x: 0, y: 25, z: 0}
   boundingBox: {fileID: 2092555407}
 --- !u!1 &1384591421
