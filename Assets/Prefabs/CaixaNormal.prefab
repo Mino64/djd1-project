@@ -192,7 +192,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 64
-  m_LinearDamping: 4
+  m_LinearDamping: 8
   m_AngularDamping: 0.05
   m_GravityScale: 2.5
   m_Material: {fileID: 0}
@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSound
   pushSound: {fileID: 8300000, guid: 2aaf9130ba73dcf4f941e9ff38d90b82, type: 3}
+  playbackSpeed: 1
   animacao: {fileID: 4228524084864325782}
 --- !u!82 &-5265182567858156579
 AudioSource:

@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 5573624024052728978}
   - component: {fileID: 2633194439971856734}
   - component: {fileID: 6142219326169488974}
-  - component: {fileID: 2977480083643760686}
   - component: {fileID: -3586600660285001565}
   - component: {fileID: 7863423318183876038}
   m_Layer: 0
@@ -478,23 +477,6 @@ MonoBehaviour:
   gravityOnFall: 2
   maxHealth: 3
   knockbackSpeed: 100
---- !u!114 &2977480083643760686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5617029899980391212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
-  _showInfo: 1
-  _explanation: 
-  description: 
-  hypertags:
-  - {fileID: 11400000, guid: 15edcc3cfa00a4e2fba5f80bcf8774c8, type: 2}
 --- !u!114 &-3586600660285001565
 MonoBehaviour:
   m_ObjectHideFlags: 0
