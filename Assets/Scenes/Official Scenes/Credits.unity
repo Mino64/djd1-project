@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Credits
   scrollSpeed: 200
+  endYPosition: 1100
   menuSceneNumber: 2
   tempomenu: 2
   animacao: {fileID: 1422801571}
