@@ -32,6 +32,7 @@ public class PlayerAudio : MonoBehaviour
     private float footstepTimer = 0f;
     private bool wasGrounded = false;
     private bool wasJumping = false;
+    private int grassZoneCount = 0; // tracks how many grass zones the cat is inside
 
     void Start()
     {
@@ -79,13 +80,24 @@ public class PlayerAudio : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(grassZoneTag))
+        {
+            grassZoneCount++;
             currentFootstepClips = grassFootstepClips;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag(grassZoneTag))
-            currentFootstepClips = footstepClips;
+        {
+            grassZoneCount--;
+            // only reset to default when fully outside all grass zones
+            if (grassZoneCount <= 0)
+            {
+                grassZoneCount = 0;
+                currentFootstepClips = footstepClips;
+            }
+        }
     }
 
     private void PlayFootstep()
