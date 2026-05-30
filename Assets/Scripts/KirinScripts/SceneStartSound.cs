@@ -11,16 +11,17 @@ public class SceneStartSound : MonoBehaviour
     private bool playing = false;
 
     void Start()
+{
+    if (audioSource != null && sound != null)
     {
-        if (audioSource != null && sound != null)
-        {
-            audioSource.pitch = pitch;
-            audioSource.volume = volume;
-            audioSource.clip = sound;
-            audioSource.Play();
-            playing = true;
-        }
+        audioSource.ignoreListenerVolume = true; // new line
+        audioSource.pitch = pitch;
+        audioSource.volume = volume;
+        audioSource.clip = sound;
+        audioSource.Play();
+        playing = true;
     }
+}
 
     void Update()
     {
