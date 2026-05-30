@@ -12,6 +12,7 @@ TagManager:
   - Ground
   - Water
   - GrassGround
+  - grassZone
   layers:
   - Default
   - TransparentFX
