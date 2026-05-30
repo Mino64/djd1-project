@@ -26332,7 +26332,7 @@ MonoBehaviour:
   speed: 2.5
   offset: {x: 0, y: 25, z: 0}
   boundingBox: {fileID: 2092555407}
-  fallSpeedMultiplier: 3
+  fallSpeedMultiplier: 2
   tempoPreBotao: 1
   botao: {fileID: 1536211598780133193}
 --- !u!1 &1384591421
