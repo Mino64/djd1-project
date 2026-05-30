@@ -336,8 +336,6 @@ GameObject:
   - component: {fileID: 960169007}
   - component: {fileID: 960169006}
   - component: {fileID: 960169011}
-  - component: {fileID: 960169010}
-  - component: {fileID: 960169009}
   - component: {fileID: 960169012}
   m_Layer: 0
   m_Name: Main Camera
@@ -420,54 +418,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &960169009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960169005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b12253cfd341aa46a3a6fcba7709af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
-  _showInfo: 1
-  _explanation: Switches to scene MainMenu
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  sceneName: MainMenu
---- !u!114 &960169010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960169005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46216fa097ecb754babda0f26d640422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
-  _showInfo: 1
-  _explanation: "Every 4 seconds, trigger the actions::\n          switches to scene
-    MainMenu\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 960169009}
-  startTriggered: 0
-  initialDelayEnable: 0
-  initialDelay: {x: 5, y: 5}
-  timeInterval: {x: 4, y: 4}
 --- !u!114 &960169011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +476,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   animator: {fileID: 350046111}
   timer: 3
+  timerSaida: 4
   nomeanimacao: Chamado
+  _sceneNumber: 1
 --- !u!1 &2034959138
 GameObject:
   m_ObjectHideFlags: 0
