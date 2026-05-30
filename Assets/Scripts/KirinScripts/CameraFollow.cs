@@ -8,6 +8,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Vector3 offset;
     [SerializeField] private BoxCollider2D boundingBox;
     [SerializeField] private float fallSpeedMultiplier = 3f;
+    [SerializeField] private float tempoPreBotao = 1f;
+    [SerializeField] GameObject botao;
     private bool frozen = false;
 
     private Camera cam;
@@ -16,6 +18,13 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+        StartCoroutine(ColocaBotao());
+    }
+
+    IEnumerator ColocaBotao()
+    {
+        yield return new WaitForSeconds(tempoPreBotao);
+        botao.SetActive(true);
     }
 
     void FixedUpdate()

@@ -25382,6 +25382,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 387493004}
     - target: {fileID: 8656473382736965827, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
+      propertyPath: botao
+      value: 
+      objectReference: {fileID: 1536211598780133193}
+    - target: {fileID: 8656473382736965827, guid: 39dded1596226a04bbbaeb73b3c731eb, type: 3}
       propertyPath: _sceneName
       value: Final
       objectReference: {fileID: 0}
@@ -26329,6 +26333,8 @@ MonoBehaviour:
   offset: {x: 0, y: 25, z: 0}
   boundingBox: {fileID: 2092555407}
   fallSpeedMultiplier: 3
+  tempoPreBotao: 1
+  botao: {fileID: 1536211598780133193}
 --- !u!1 &1384591421
 GameObject:
   m_ObjectHideFlags: 0
@@ -50443,6 +50449,34 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2436010217617440062, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835414337099592130, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835414337099592130, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835414337099592130, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835414337099592130, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -910
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835414337099592130, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 490
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835414337099592130, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3540724271392000323, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -50575,6 +50609,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!1 &1536211598780133193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2436010217617440062, guid: bfe15e762ac9b334a9fd74f51cc9e6fe, type: 3}
+  m_PrefabInstance: {fileID: 1536211598780133191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

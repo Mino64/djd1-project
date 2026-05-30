@@ -433,14 +433,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
   _showInfo: 1
-  _explanation: Switches to scene splash_screen_lusoLogo
+  _explanation: Switches to scene MainMenu
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: splash_screen_lusoLogo
+  sceneName: MainMenu
 --- !u!114 &960169010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
   _explanation: "Every 4 seconds, trigger the actions::\n          switches to scene
-    splash_screen_lusoLogo\n"
+    MainMenu\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
