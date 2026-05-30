@@ -9,6 +9,8 @@ public class Credits : MonoBehaviour
 
     [Header("LoadScene")]
     [SerializeField] private int menuSceneNumber = 2;
+    [SerializeField] private float tempomenu = 2f;
+    [SerializeField] Animator animacao;
 
     private RectTransform rectTransform;
     private Camera uiCamera;
@@ -62,6 +64,8 @@ public class Credits : MonoBehaviour
         canScroll = true;
     }
 
+    private bool isEnding = false;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -70,15 +74,24 @@ public class Credits : MonoBehaviour
             return;
         }
 
-        if (!canScroll) return;
+        if (!canScroll || isEnding) return;
 
-        // Scroll upward
         Vector3 pos = rectTransform.position;
         pos.y += scrollSpeed * Time.deltaTime;
         rectTransform.position = pos;
 
         if (pos.y >= endWorldY)
-            GoToMenu();
+        {
+            isEnding = true;
+            animacao.Play("TransicaoSaida");
+            StartCoroutine(VoltaProMenuComTempo());
+        }
+    }
+
+    private IEnumerator VoltaProMenuComTempo()
+    {
+        yield return new WaitForSeconds(tempomenu);
+        GoToMenu();
     }
 
     private void GoToMenu()
