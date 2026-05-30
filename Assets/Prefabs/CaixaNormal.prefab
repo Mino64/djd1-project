@@ -67,11 +67,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoxLand
   landSound: {fileID: 8300000, guid: 3dcb59ec48f92b04fbc37d13536c96b2, type: 3}
   landVolume: 0.15
+  waterLandSound: {fileID: 8300000, guid: e32b7d458544b2b409b391edd28bfeeb, type: 3}
+  waterLandVolume: 0.636
+  waterLandPitch: 1
   animator: {fileID: 4366311713229395577, guid: bfe0fe7adcccf2d49a62e89df892d0db, type: 3}
   minImpactVelocity: 2
   groundLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2128
   soundCooldown: 0.5
 --- !u!212 &1138159304306217202
 SpriteRenderer:
@@ -232,7 +235,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 0

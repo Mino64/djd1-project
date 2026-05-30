@@ -11,6 +11,7 @@ TagManager:
   - TriggerPorta
   - Ground
   - Water
+  - GrassGround
   layers:
   - Default
   - TransparentFX
