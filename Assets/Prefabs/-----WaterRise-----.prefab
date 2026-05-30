@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RisingWater
   riseSpeed: 20
   maxY: 230
-  levelSceneName: MoinhoLVL water test
+  levelSceneNum: 0
   deathTime: 1
 --- !u!114 &32233433923386481
 MonoBehaviour:
@@ -232,7 +232,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.48
   m_Pitch: 1
   Loop: 0
