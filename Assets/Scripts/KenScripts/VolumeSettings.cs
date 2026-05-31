@@ -19,7 +19,7 @@ public class VolumeSettings : MonoBehaviour
         if (input != 0)
         {
             volumeSlider.value = Mathf.Clamp01(volumeSlider.value + input * changeSpeed * Time.deltaTime);
-            AudioListener.volume = volumeSlider.value;
+            AudioListener.volume = volumeSlider.value * volumeSlider.value;
         }
     }
 }
