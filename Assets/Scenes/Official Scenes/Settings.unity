@@ -345,7 +345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0187d9e0d149d4429e058f2c0f7d7b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  volumeSlider: {fileID: 0}
   changeSpeed: 1
 --- !u!1 &537639721
 GameObject:
@@ -689,6 +688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 846019965}
   - component: {fileID: 846019966}
+  - component: {fileID: 846019967}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -765,10 +765,23 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &846019967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846019964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0187d9e0d149d4429e058f2c0f7d7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VolumeSettings
+  changeSpeed: 1
 --- !u!1 &1183202991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1049,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1862875311}
   - component: {fileID: 1862875310}
-  - component: {fileID: 1862875312}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1074,20 +1086,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1862875312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862875309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0187d9e0d149d4429e058f2c0f7d7b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VolumeSettings
-  volumeSlider: {fileID: 846019966}
-  changeSpeed: 1
 --- !u!1 &2097547703
 GameObject:
   m_ObjectHideFlags: 0
