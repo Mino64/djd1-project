@@ -504,6 +504,9 @@ MonoBehaviour:
     m_Bits: 2112
   switchToGrassTag: GrassZone
   switchToDefaultTag: SwitchZone
+  ladderClip: {fileID: 8300000, guid: 84985ff33a891114db9efaa50750e5a2, type: 3}
+  ladderVolume: 1
+  ladderInterval: 0.3
 --- !u!82 &7863423318183876038
 AudioSource:
   m_ObjectHideFlags: 0

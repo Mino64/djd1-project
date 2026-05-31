@@ -437,6 +437,11 @@ public class PlayerAudio : MonoBehaviour
     [SerializeField] private string switchToGrassTag   = "GrassZone";
     [SerializeField] private string switchToDefaultTag = "SwitchZone";
 
+    [Header("Ladder Settings")]
+    [SerializeField] private AudioClip ladderClip;
+    [SerializeField] private float ladderVolume = 1f;
+    [SerializeField] private float ladderInterval = 0.3f;
+
     private AudioSource audioSource;
     private Rigidbody2D rb;
     private AudioClip currentFootstep;
@@ -444,6 +449,9 @@ public class PlayerAudio : MonoBehaviour
     private bool wasGrounded = false;
     private bool wasJumping = false;
 
+    private float ladderTimer = 0f;
+    private bool onLadder = false;
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -453,55 +461,80 @@ public class PlayerAudio : MonoBehaviour
     }
 
     void Update()
+{
+    bool isGrounded = IsOnGround();
+    float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
+    float verticalSpeed = Mathf.Abs(rb.linearVelocity.y);
+    bool isMovingHorizontally = horizontalSpeed > 0.1f;
+    bool isAirborne = Mathf.Abs(rb.linearVelocity.y) > 0.1f;
+
+    if (!isAirborne && isMovingHorizontally)
     {
-        bool isGrounded = IsOnGround();
-        float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
-        bool isMovingHorizontally = horizontalSpeed > 0.1f;
-        bool isAirborne = Mathf.Abs(rb.linearVelocity.y) > 0.1f;
-
-        if (!isAirborne && isMovingHorizontally)
+        footstepTimer -= Time.deltaTime;
+        if (footstepTimer <= 0f)
         {
-            footstepTimer -= Time.deltaTime;
-            if (footstepTimer <= 0f)
-            {
-                PlayFootstep();
-                footstepTimer = footstepInterval;
-            }
+            PlayFootstep();
+            footstepTimer = footstepInterval;
         }
-        else
-        {
-            footstepTimer = 0f;
-        }
-
-        if (isGrounded && Input.GetButtonDown("Jump"))
-        {
-            PlayClip(jumpClip, jumpVolume);
-            wasJumping = true;
-        }
-
-        if (!wasGrounded && isGrounded && wasJumping)
-        {
-            PlayClip(landClip, landVolume);
-            wasJumping = false;
-        }
-
-        wasGrounded = isGrounded;
     }
+    else
+    {
+        footstepTimer = 0f;
+    }
+
+    // ladder sound
+    if (onLadder && verticalSpeed > 0.1f)
+    {
+        ladderTimer -= Time.deltaTime;
+        if (ladderTimer <= 0f)
+        {
+            PlayClip(ladderClip, ladderVolume);
+            ladderTimer = ladderInterval;
+        }
+    }
+    else
+    {
+        ladderTimer = 0f;
+    }
+
+    if (isGrounded && Input.GetButtonDown("Jump"))
+    {
+        PlayClip(jumpClip, jumpVolume);
+        wasJumping = true;
+    }
+
+    if (!wasGrounded && isGrounded && wasJumping)
+    {
+        PlayClip(landClip, landVolume);
+        wasJumping = false;
+    }
+
+    wasGrounded = isGrounded;
+}
 
     private void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.CompareTag(switchToGrassTag))
     {
-        if (other.CompareTag(switchToGrassTag))
-        {
-            currentFootstep = grassFootstep;
-            Debug.Log("Switched to grass sound");
-        }
-
-        if (other.CompareTag(switchToDefaultTag))
-        {
-            currentFootstep = defaultFootstep;
-            Debug.Log("Switched to default sound");
-        }
+        currentFootstep = grassFootstep;
+        Debug.Log("Switched to grass sound");
     }
+
+    if (other.CompareTag(switchToDefaultTag))
+    {
+        currentFootstep = defaultFootstep;
+        Debug.Log("Switched to default sound");
+    }
+
+    if (other.CompareTag("Ladder"))
+        onLadder = true;
+}
+
+private void OnTriggerExit2D(Collider2D other)
+{
+    if (other.CompareTag("Ladder"))
+        onLadder = false;
+}
 
     private void PlayFootstep()
     {
