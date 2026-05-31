@@ -489,23 +489,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f665fe5dc700ecc4a9384b10e87205d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAudio
-  footstepClips:
-  - {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
-  grassFootstepClips:
-  - {fileID: 8300000, guid: 514e468ed10775349b9ec2d588613c1c, type: 3}
+  defaultFootstep: {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
+  grassFootstep: {fileID: 8300000, guid: 514e468ed10775349b9ec2d588613c1c, type: 3}
   footstepInterval: 0.3
-  footstepVolume: 0.3
-  pitchVariation: 0.847
+  footstepVolume: 1
   jumpClip: {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
   landClip: {fileID: 8300000, guid: 97c1174e8ad4fce468861a115ec8c816, type: 3}
-  jumpVolume: 0.162
-  landVolume: 1
+  jumpVolume: 0.1
+  landVolume: 0.4
   groundCheck: {fileID: 9120561340542361071}
   groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
-  grassZoneTag: GrassGround
+    m_Bits: 2112
+  switchToGrassTag: GrassZone
+  switchToDefaultTag: SwitchZone
 --- !u!82 &7863423318183876038
 AudioSource:
   m_ObjectHideFlags: 0
