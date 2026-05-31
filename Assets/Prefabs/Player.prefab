@@ -492,7 +492,7 @@ MonoBehaviour:
   defaultFootstep: {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
   grassFootstep: {fileID: 8300000, guid: 514e468ed10775349b9ec2d588613c1c, type: 3}
   footstepInterval: 0.3
-  footstepVolume: 1
+  footstepVolume: 0.02
   jumpClip: {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
   landClip: {fileID: 8300000, guid: 97c1174e8ad4fce468861a115ec8c816, type: 3}
   jumpVolume: 0.1
@@ -506,7 +506,7 @@ MonoBehaviour:
   switchToDefaultTag: SwitchZone
   ladderClip: {fileID: 8300000, guid: 84985ff33a891114db9efaa50750e5a2, type: 3}
   ladderVolume: 1
-  ladderInterval: 0.3
+  ladderInterval: 0.5
 --- !u!82 &7863423318183876038
 AudioSource:
   m_ObjectHideFlags: 0
