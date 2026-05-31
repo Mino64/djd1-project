@@ -6,11 +6,6 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private float changeSpeed = 1f;
 
-    private void Start()
-    {
-        // Set slider to match current volume on start
-        volumeSlider.value = AudioListener.volume;
-    }
 
     private void Update()
     {
