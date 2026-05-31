@@ -5,7 +5,10 @@ public class BoxSound : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioClip pushSound;
     [SerializeField][Range(0.1f, 3f)] private float playbackSpeed = 1f;
+
+    [Header("Animation")]
     [SerializeField] Animator animacao;
+    [SerializeField] private string animationName;
 
     private AudioSource audioSource;
 
@@ -22,7 +25,7 @@ public class BoxSound : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Box"))
         {
-            animacao.Play("AnimacaoCaixaPequena1Cair", 0, 0f);
+            animacao.Play(animationName, 0, 0f);
         }
 
         if (collision.gameObject.GetComponent<Player>())
