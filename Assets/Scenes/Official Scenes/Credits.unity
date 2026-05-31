@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1964.3098}
+  m_AnchoredPosition: {x: 0, y: -2151}
   m_SizeDelta: {x: 200, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28974195
@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d40da43ba7e46ef478bca40dc29a52e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Credits
-  scrollSpeed: 200
-  endYPosition: 1100
+  scrollSpeed: 150
+  endYPosition: 1450
   menuSceneNumber: 2
   tempomenu: 2
   animacao: {fileID: 1422801571}
@@ -195,13 +195,61 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\n\nBrought to you by \nPeanut Cat Studio\n\nProgrammer\nDaniel
-    henriques\n\nArtists\nGon\xE7alo Almeida\nIsis Rocha\nKirin Ota\n\nGame Design\nDaniel
-    Henriques\nGon\xE7alo Almeida\nIsis Rocha\nKirin Ota\n\nSpecial Thanks\nEverybody
-    that somehow helped us <3\n\nRLY RLY THANK YOU FOR PLAYING !!!"
+  m_text: '
+
+
+
+    -- Brought to you by --
+
+    Peanut Cat Studio
+
+
+
+
+    -- Programmer
+    --
+
+    Daniel henriques
+
+
+
+
+    -- Artists --
+
+    Goncalo Almeida
+
+    Isis
+    Rocha
+
+    Kirin Ota
+
+
+
+
+    -- Game Design --
+
+    Daniel Henriques
+
+    Goncalo
+    Almeida
+
+    Isis Rocha
+
+    Kirin Ota
+
+
+
+
+    -- Special Thanks --
+
+
+    Everybody
+    that somehow helped us <3
+
+    RLY RLY THANK YOU FOR PLAYING !!!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bad40eda64c00ce48841dd4fc6f08892, type: 2}
-  m_sharedMaterial: {fileID: -2888702523347521413, guid: bad40eda64c00ce48841dd4fc6f08892, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2cfc4e67f42a100499011de48e7d1e4b, type: 2}
+  m_sharedMaterial: {fileID: -6915471527435330769, guid: 2cfc4e67f42a100499011de48e7d1e4b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
