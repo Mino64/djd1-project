@@ -27,10 +27,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Official Scenes/Level2.unity
     guid: 3e8ba5e0b52d85d4995ee9b750a6be4a
   - enabled: 0
-    path: Assets/Scenes/Test Scenes/Final.unity
+    path: Assets/Scenes/Official Scenes/Final.unity
     guid: 996c831156b2ae54f9e2cca802e1b8c3
   - enabled: 0
-    path: Assets/Scenes/Test Scenes/Level2Entrega3.unity
+    path: Assets/Scenes/Official Scenes/Level2Entrega3.unity
     guid: fb5f6835961e33644b9b7549e4dc58ad
   - enabled: 0
     path: Assets/Scenes/Test Scenes/Level2Entrega2.unity

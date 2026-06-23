@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 440bbe43a3320ba49b3788245bb40fbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 974921468057177495
+    second: gato_SSA_64x64_allUsedAnimations_0
+  - first:
+      213: 1613772098227472910
+    second: gato_SSA_64x64_allUsedAnimations_1
+  - first:
+      213: 8111307571114979772
+    second: gato_SSA_64x64_allUsedAnimations_2
+  - first:
+      213: 5774238261173276368
+    second: gato_SSA_64x64_allUsedAnimations_3
+  - first:
+      213: -2137565060186782348
+    second: gato_SSA_64x64_allUsedAnimations_4
+  - first:
+      213: -8948234113593773322
+    second: gato_SSA_64x64_allUsedAnimations_5
+  - first:
+      213: 7605658332703753929
+    second: gato_SSA_64x64_allUsedAnimations_6
+  - first:
+      213: -8199859923868020406
+    second: gato_SSA_64x64_allUsedAnimations_7
+  - first:
+      213: -6480750621690204441
+    second: gato_SSA_64x64_allUsedAnimations_8
+  - first:
+      213: 8685119360834009379
+    second: gato_SSA_64x64_allUsedAnimations_9
+  - first:
+      213: 5208235214466292795
+    second: gato_SSA_64x64_allUsedAnimations_10
+  - first:
+      213: 845425823431486355
+    second: gato_SSA_64x64_allUsedAnimations_11
+  - first:
+      213: -1962379064517116163
+    second: gato_SSA_64x64_allUsedAnimations_12
+  - first:
+      213: 5333269554176120705
+    second: gato_SSA_64x64_allUsedAnimations_13
+  - first:
+      213: 5350147267847652236
+    second: gato_SSA_64x64_allUsedAnimations_14
+  - first:
+      213: -124964221363180675
+    second: gato_SSA_64x64_allUsedAnimations_15
+  - first:
+      213: -9201806059417541500
+    second: gato_SSA_64x64_allUsedAnimations_16
+  - first:
+      213: 4729111258881600850
+    second: gato_SSA_64x64_allUsedAnimations_17
+  - first:
+      213: -2421049698523526523
+    second: gato_SSA_64x64_allUsedAnimations_18
+  - first:
+      213: -7269619469105703378
+    second: gato_SSA_64x64_allUsedAnimations_19
+  - first:
+      213: -3974657113151810421
+    second: gato_SSA_64x64_allUsedAnimations_20
+  - first:
+      213: -2468636846885259602
+    second: gato_SSA_64x64_allUsedAnimations_21
+  - first:
+      213: -8381921137929548878
+    second: gato_SSA_64x64_allUsedAnimations_22
+  - first:
+      213: -6740431905072938576
+    second: gato_SSA_64x64_allUsedAnimations_23
+  - first:
+      213: 4024436392495567522
+    second: gato_SSA_64x64_allUsedAnimations_24
+  - first:
+      213: -1467857967253218932
+    second: gato_SSA_64x64_allUsedAnimations_25
+  - first:
+      213: 6969522852889381054
+    second: gato_SSA_64x64_allUsedAnimations_26
+  - first:
+      213: -2710129694789469498
+    second: gato_SSA_64x64_allUsedAnimations_27
+  - first:
+      213: -5008749765455588639
+    second: gato_SSA_64x64_allUsedAnimations_28
+  - first:
+      213: 7730099344770193675
+    second: gato_SSA_64x64_allUsedAnimations_29
+  - first:
+      213: 1247262736156753453
+    second: gato_SSA_64x64_allUsedAnimations_30
+  - first:
+      213: -7164427299092864581
+    second: gato_SSA_64x64_allUsedAnimations_31
+  - first:
+      213: 8974561676259590834
+    second: gato_SSA_64x64_allUsedAnimations_32
+  - first:
+      213: -1058377672724953399
+    second: gato_SSA_64x64_allUsedAnimations_33
+  - first:
+      213: 8443844845894645713
+    second: gato_SSA_64x64_allUsedAnimations_34
+  - first:
+      213: -2934462786116035332
+    second: gato_SSA_64x64_allUsedAnimations_35
+  - first:
+      213: -4768574045155140093
+    second: gato_SSA_64x64_allUsedAnimations_36
+  - first:
+      213: 5689123915894012760
+    second: gato_SSA_64x64_allUsedAnimations_37
+  - first:
+      213: -4717692053570298226
+    second: gato_SSA_64x64_allUsedAnimations_38
+  - first:
+      213: 7022677615722999427
+    second: gato_SSA_64x64_allUsedAnimations_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d437be8ed978d00800000000000000
+      internalID: 974921468057177495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a09475c25456610800000000000000
+      internalID: 1613772098227472910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1be38a247219070800000000000000
+      internalID: 8111307571114979772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dec3b5fa17322050800000000000000
+      internalID: 5774238261173276368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475c74f27e7d552e0800000000000000
+      internalID: -2137565060186782348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2f534cb7c71d380800000000000000
+      internalID: -8948234113593773322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c60cc305f9bc8960800000000000000
+      internalID: 7605658332703753929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4192ed08de343e80800000000000000
+      internalID: -8199859923868020406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee634465afbf06a0800000000000000
+      internalID: -6480750621690204441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329f06efa0eb78870800000000000000
+      internalID: 8685119360834009379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c91f8455e574840800000000000000
+      internalID: 5208235214466292795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b6391ae4e8bbb00800000000000000
+      internalID: 845425823431486355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe3bc053aa34c4e0800000000000000
+      internalID: -1962379064517116163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187d2141764930a40800000000000000
+      internalID: 5333269554176120705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c830614089a8f3a40800000000000000
+      internalID: 5350147267847652236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ba308e3b9044ef0800000000000000
+      internalID: -124964221363180675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4846168642e9c4080800000000000000
+      internalID: -9201806059417541500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d20f052ad21a140800000000000000
+      internalID: 4729111258881600850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a40ff5024b66ed0800000000000000
+      internalID: -2421049698523526523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26d0b3eb9f1d1b90800000000000000
+      internalID: -7269619469105703378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b845b9a0a6e27d8c0800000000000000
+      internalID: -3974657113151810421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6b6fdfdd3adbdd0800000000000000
+      internalID: -2468636846885259602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb0f56622f6dab80800000000000000
+      internalID: -8381921137929548878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b10b6905ec2572a0800000000000000
+      internalID: -6740431905072938576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a25adb939ba9d730800000000000000
+      internalID: 4024436392495567522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c891521b4fe11abe0800000000000000
+      internalID: -1467857967253218932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8407ccb18b8b060800000000000000
+      internalID: 6969522852889381054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caf5d6c66fa36ad0800000000000000
+      internalID: -2710129694789469498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2d23530a85d7ab0800000000000000
+      internalID: -5008749765455588639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09d183f564d64b60800000000000000
+      internalID: 7730099344770193675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_30
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e743aa9da2f4110800000000000000
+      internalID: 1247262736156753453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1657a8457d29c90800000000000000
+      internalID: -7164427299092864581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b289489b4c0c8c70800000000000000
+      internalID: 8974561676259590834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6460b3d13ef41f0800000000000000
+      internalID: -1058377672724953399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7301266209e2570800000000000000
+      internalID: 8443844845894645713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc53fab4a1b647d0800000000000000
+      internalID: -2934462786116035332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e5161cb2f92ddb0800000000000000
+      internalID: -4768574045155140093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bba0a2f04d3fe40800000000000000
+      internalID: 5689123915894012760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e524b9214678eb0800000000000000
+      internalID: -4717692053570298226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_SSA_64x64_allUsedAnimations_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ea1417510957160800000000000000
+      internalID: 7022677615722999427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1703d197813ece949b989714a681606b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      gato_SSA_64x64_allUsedAnimations_0: 974921468057177495
+      gato_SSA_64x64_allUsedAnimations_1: 1613772098227472910
+      gato_SSA_64x64_allUsedAnimations_10: 5208235214466292795
+      gato_SSA_64x64_allUsedAnimations_11: 845425823431486355
+      gato_SSA_64x64_allUsedAnimations_12: -1962379064517116163
+      gato_SSA_64x64_allUsedAnimations_13: 5333269554176120705
+      gato_SSA_64x64_allUsedAnimations_14: 5350147267847652236
+      gato_SSA_64x64_allUsedAnimations_15: -124964221363180675
+      gato_SSA_64x64_allUsedAnimations_16: -9201806059417541500
+      gato_SSA_64x64_allUsedAnimations_17: 4729111258881600850
+      gato_SSA_64x64_allUsedAnimations_18: -2421049698523526523
+      gato_SSA_64x64_allUsedAnimations_19: -7269619469105703378
+      gato_SSA_64x64_allUsedAnimations_2: 8111307571114979772
+      gato_SSA_64x64_allUsedAnimations_20: -3974657113151810421
+      gato_SSA_64x64_allUsedAnimations_21: -2468636846885259602
+      gato_SSA_64x64_allUsedAnimations_22: -8381921137929548878
+      gato_SSA_64x64_allUsedAnimations_23: -6740431905072938576
+      gato_SSA_64x64_allUsedAnimations_24: 4024436392495567522
+      gato_SSA_64x64_allUsedAnimations_25: -1467857967253218932
+      gato_SSA_64x64_allUsedAnimations_26: 6969522852889381054
+      gato_SSA_64x64_allUsedAnimations_27: -2710129694789469498
+      gato_SSA_64x64_allUsedAnimations_28: -5008749765455588639
+      gato_SSA_64x64_allUsedAnimations_29: 7730099344770193675
+      gato_SSA_64x64_allUsedAnimations_3: 5774238261173276368
+      gato_SSA_64x64_allUsedAnimations_30: 1247262736156753453
+      gato_SSA_64x64_allUsedAnimations_31: -7164427299092864581
+      gato_SSA_64x64_allUsedAnimations_32: 8974561676259590834
+      gato_SSA_64x64_allUsedAnimations_33: -1058377672724953399
+      gato_SSA_64x64_allUsedAnimations_34: 8443844845894645713
+      gato_SSA_64x64_allUsedAnimations_35: -2934462786116035332
+      gato_SSA_64x64_allUsedAnimations_36: -4768574045155140093
+      gato_SSA_64x64_allUsedAnimations_37: 5689123915894012760
+      gato_SSA_64x64_allUsedAnimations_38: -4717692053570298226
+      gato_SSA_64x64_allUsedAnimations_39: 7022677615722999427
+      gato_SSA_64x64_allUsedAnimations_4: -2137565060186782348
+      gato_SSA_64x64_allUsedAnimations_5: -8948234113593773322
+      gato_SSA_64x64_allUsedAnimations_6: 7605658332703753929
+      gato_SSA_64x64_allUsedAnimations_7: -8199859923868020406
+      gato_SSA_64x64_allUsedAnimations_8: -6480750621690204441
+      gato_SSA_64x64_allUsedAnimations_9: 8685119360834009379
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
