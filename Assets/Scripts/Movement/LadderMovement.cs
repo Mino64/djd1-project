@@ -9,8 +9,11 @@ public class LadderMovement : MonoBehaviour
     [SerializeField] private Animator catAnimator;
 
     private float vertical;
+    public float Vertical { get { return vertical; } }
     private bool isLadder;
+    public bool IsLadder { get { return isLadder; } }
     private bool isClimbing;
+    public bool IsClimbing { get { return isClimbing; } }
     private void Update()
     {
         vertical = Input.GetAxis("Vertical");

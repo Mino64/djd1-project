@@ -10,6 +10,7 @@ public class PlayerAudio : MonoBehaviour
     [SerializeField] private AudioClip grassFootstep;
     [SerializeField] [Range(0f, 1f)] private float grassFootstepVolume = 1f;
     [SerializeField] private float footstepInterval = 0.3f;
+    [SerializeField] private LadderMovement ladderMovement;
 
     [Header("Jump / Land Settings")]
     [SerializeField] private AudioClip jumpClip;
@@ -39,7 +40,9 @@ public class PlayerAudio : MonoBehaviour
     private bool wasGrounded = false;
     private bool wasJumping = false;
     private float ladderTimer = 0f;
-    private bool onLadder = false;
+
+    //private bool onLadder = false;
+    // private bool ladderBoolTest;
 
     void Start()
     {
@@ -53,6 +56,7 @@ public class PlayerAudio : MonoBehaviour
     void Update()
     {
         bool isGrounded = IsOnGround();
+        bool onLadderAndMoving = ladderMovement != null && ladderMovement.IsClimbing && Mathf.Abs(ladderMovement.Vertical) > 0.1f;
         float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
         float verticalSpeed = Mathf.Abs(rb.linearVelocity.y);
         bool isMovingHorizontally = horizontalSpeed > 0.1f;
@@ -72,7 +76,7 @@ public class PlayerAudio : MonoBehaviour
             footstepTimer = 0f;
         }
 
-        if (onLadder && verticalSpeed > 0.1f)
+        if (onLadderAndMoving)
         {
             ladderTimer -= Time.deltaTime;
             if (ladderTimer <= 0f)
@@ -115,16 +119,16 @@ public class PlayerAudio : MonoBehaviour
             currentFootstepVolume = defaultFootstepVolume;
         }
 
-        if (other.CompareTag("Ladder"))
-            onLadder = true;
+        //if (other.CompareTag("Ladder"))
+            //onLadder = true;
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    /*private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Ladder"))
             onLadder = false;
     }
-
+*/
     private void PlayFootstep()
     {
         if (currentFootstep == null) return;
