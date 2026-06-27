@@ -15,8 +15,8 @@ public class PlayerAudio : MonoBehaviour
     [Header("Jump / Land Settings")]
     [SerializeField] private AudioClip jumpClip;
     [SerializeField] private AudioClip landClip;
-    [SerializeField] [Range(0f, 1f)] private float jumpVolume = 0.8f;
-    [SerializeField] [Range(0f, 1f)] private float landVolume = 0.8f;
+    [SerializeField] [Range(0f, 1f)] private float jumpVolume = 1f;
+    [SerializeField] [Range(0f, 1f)] private float landVolume = 1f;
 
     [Header("Ground Detection")]
     [SerializeField] private Transform groundCheck;
@@ -59,10 +59,10 @@ public class PlayerAudio : MonoBehaviour
         bool onLadderAndMoving = ladderMovement != null && ladderMovement.IsClimbing && Mathf.Abs(ladderMovement.Vertical) > 0.1f;
         float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
         float verticalSpeed = Mathf.Abs(rb.linearVelocity.y);
-        bool isMovingHorizontally = horizontalSpeed > 0.1f;
+        bool isMoving = horizontalSpeed > 0.1f && verticalSpeed < 0.1f;
         bool isAirborne = Mathf.Abs(rb.linearVelocity.y) > 0.1f;
 
-        if (!isAirborne && isMovingHorizontally)
+        if (!isAirborne && isMoving)
         {
             footstepTimer -= Time.deltaTime;
             if (footstepTimer <= 0f)
@@ -113,6 +113,17 @@ public class PlayerAudio : MonoBehaviour
             currentFootstepVolume = grassFootstepVolume;
         }
 
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag(switchToGrassTag))
+        {
+            currentFootstep = defaultFootstep;
+            currentFootstepVolume = defaultFootstepVolume; 
+        }
+    }
+        /*
         if (other.CompareTag(switchToDefaultTag))
         {
             currentFootstep = defaultFootstep;
