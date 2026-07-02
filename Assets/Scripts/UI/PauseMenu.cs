@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetButtonDown("Cancel"))
                 Pause();
         }
     }
@@ -61,21 +61,21 @@ public class PauseMenu : MonoBehaviour
     private void HandlePausedInput()
     {
         // I or Escape → resume (unpause)
-        if (Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.I) || Input.GetButtonDown("Cancel"))
         {
             Resume();
             return;
         }
 
         // R → reset to last checkpoint, then reload current scene
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)|| Input.GetButtonDown("Run"))
         {
             ResetLevel();
             return;
         }
 
         // M → go to main menu
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M)|| Input.GetButtonDown("Submit"))
         {
             GoToMainMenu();
         }
