@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81adb525f3687cc8d8f829a30a5d10a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  speed: 100
+  speed: 90
   jumpSpeed: 260
   groundCheck: {fileID: 5060549245506155869}
   groundCheckRadius: 2.5
@@ -379,14 +379,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAudio
   defaultFootstep: {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
-  defaultFootstepVolume: 1
+  defaultFootstepVolume: 0.1
   grassFootstep: {fileID: 8300000, guid: 514e468ed10775349b9ec2d588613c1c, type: 3}
-  grassFootstepVolume: 1
+  grassFootstepVolume: 0.1
   footstepInterval: 0.3
+  ladderMovement: {fileID: 0}
   jumpClip: {fileID: 8300000, guid: 4b82976487ee62841aa44e4b90e062c3, type: 3}
   landClip: {fileID: 8300000, guid: 97c1174e8ad4fce468861a115ec8c816, type: 3}
   jumpVolume: 0.1
-  landVolume: 0.4
+  landVolume: 0.1
   groundCheck: {fileID: 9120561340542361071}
   groundCheckRadius: 0.1
   groundLayer:
