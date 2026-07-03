@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c08d3b354666e4da06375193fa9bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  NovaPos: {x: 908, y: 60, z: -10}
+  NovaPos: {x: 982, y: 60, z: -10}
   camara: {fileID: 839800415}
 --- !u!114 &62186795 stripped
 MonoBehaviour:
@@ -767933,7 +767933,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 7914a83030462b348b72d71c3cc9c272, type: 3}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: jumpVolume
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: ladderClip
@@ -767941,7 +767941,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: d6dad4e4d5ffd1541ba7a264e90e0d2b, type: 3}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: landVolume
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: groundCheck
@@ -767949,7 +767949,7 @@ PrefabInstance:
       objectReference: {fileID: 383309506}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: ladderVolume
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: grassFootstep
@@ -767973,11 +767973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: grassFootstepVolume
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: defaultFootstepVolume
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: -3586600660285001565, guid: 2189238586389dd24aa0cc30d2ec8463, type: 3}
       propertyPath: 'footstepClips.Array.data[1]'
