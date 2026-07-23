@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float gravityOnFall = 1.0f;
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float knockbackSpeed = 100.0f;
+    [SerializeField] private float coyoteTime = 0.1f;
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
 
     private float jumpTime;
     private float horizontalAxis;
+    private float coyoteCounter;
 
     bool isKnockback => (knockbackTime > 0.0f);
     bool isInvulnerable => (invulnerabilityTime > 0.0f);
@@ -77,6 +79,16 @@ public class Player : MonoBehaviour
 
         ComputeGround();
 
+        //o coyote time é determinado de acordo com o estado de onGround
+        if (onGround)
+        {
+            coyoteCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteCounter = Mathf.Max(0, coyoteCounter - Time.deltaTime);
+        }
+
         airCollider.enabled = !onGround;
         groundCollider.enabled = onGround;
 
@@ -85,15 +97,26 @@ public class Player : MonoBehaviour
         if (!isKnockback)
         {
             horizontalAxis = Input.GetAxis("Horizontal");
+            
+            // sem o coyote time:
+            /*if (onGround) 
+            { 
+                currentVelocity.y = jumpSpeed; 
+                jumpTime = Time.time; 
+                rb.gravityScale = gravityOnJump; 
+            }
+            */
 
-            if (Input.GetButtonDown("Jump"))
+            //com coyote time
+            //O coyote time somente é != 0 se onGround for = false
+            if (Input.GetButtonDown("Jump") && coyoteCounter > 0)
             {
-                if (onGround)
-                {
-                    currentVelocity.y = jumpSpeed;
-                    jumpTime = Time.time;
-                    rb.gravityScale = gravityOnJump;
-                }
+                
+                currentVelocity.y = jumpSpeed;
+                jumpTime = Time.time;
+                rb.gravityScale = gravityOnJump;
+                coyoteCounter = 0;
+                
             }
             else if (Input.GetButton("Jump"))
             {
