@@ -366,6 +366,9 @@ MonoBehaviour:
   gravityOnFall: 2
   maxHealth: 3
   knockbackSpeed: 100
+  coyoteTime: 0.1
+  audioSource: {fileID: 7863423318183876038}
+  somMiado: {fileID: 8300000, guid: d0feb8645107be043acd577fc1ca9f6c, type: 3}
 --- !u!114 &-3586600660285001565
 MonoBehaviour:
   m_ObjectHideFlags: 0

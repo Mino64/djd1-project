@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float knockbackSpeed = 100.0f;
     [SerializeField] private float coyoteTime = 0.1f;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip somMiado;
+
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
@@ -55,6 +58,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            audioSource.PlayOneShot(somMiado);
+        }
+
         if (isInvulnerable)
         {
             invulnerabilityTime -= Time.deltaTime;
