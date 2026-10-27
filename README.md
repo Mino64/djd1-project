@@ -29,3 +29,5 @@ A simple 2D Platformer game based on the movie Flow created with [Okapi Kit](htt
 - Box being Pushed: [Pixabay](https://pixabay.com/sound-effects/household-pushing-pulling-chair-table-wooden-furntiure-across-hard-floor-pack-26311/)
 
 - Box and Cat splash: [Freesound](https://freesoundsite.com/sound-collections/water-splash-sound-effects/)
+
+- Trailer music: Movie Action Trailer Marimba Female Male Choir Atmo Music Cinematic 120Bpm Mastered.wav by szegvari -- https://freesound.org/s/622233/ -- License: Creative Commons 0
